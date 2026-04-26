@@ -7,6 +7,13 @@
         "path": "./games/breakout/index.html"
     },
     {
+        "id": "pong",
+        "title": "Pong",
+        "description": "Classic arcade game with three difficulty levels. Battle the AI in fast-paced paddle action!",
+        "icon": "",
+        "path": "./games/pong/index.html"
+    },
+    {
         "id": "snake",
         "title": "Classic Snake",
         "description": "Classic snake game. Eat food, grow longer, don't hit walls or yourself!",
