@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="game-header">
+            <h1>Breakout</h1>
+            <div class="game-info">
+                <div class="level">Level: <span id="level">1</span></div>
+                <div class="score">Score: <span id="score">0</span></div>
+            </div>
+        </div>
+        <div id="start-screen" class="start-screen">
+            <h2>Ready to Play?</h2>
+            <p>Move paddle with arrow keys or mouse</p>
+            <button id="start-btn" class="start-btn">Start Game</button>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div id="game-over-screen" class="game-over-screen hidden">
+            <h2 id="game-over-title">Game Over</h2>
+            <p id="game-over-message"></p>
+            <button id="play-again-btn" class="start-btn">Play Again</button>
+        </div>
+        <div class="game-controls">
+            <button id="back-btn" class="control-btn back-btn">Back to Arcade</button>
+            <button id="restart-btn" class="control-btn restart-btn">Restart</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

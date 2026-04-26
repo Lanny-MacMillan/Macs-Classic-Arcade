@@ -1,5 +1,12 @@
 [
     {
+        "id": "breakout",
+        "title": "Breakout",
+        "description": "Classic brick breaker game. Bounce the ball off the paddle and destroy all the bricks!",
+        "icon": "",
+        "path": "./games/breakout/index.html"
+    },
+    {
         "id": "snake",
         "title": "Classic Snake",
         "description": "Classic snake game. Eat food, grow longer, don't hit walls or yourself!",
