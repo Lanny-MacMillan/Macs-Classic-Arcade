@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="game-header">
+            <h1 class="game-title">Memory Match</h1>
+            <div class="difficulty-selector">
+                <button class="difficulty-btn active" data-difficulty="easy">Easy</button>
+                <button class="difficulty-btn" data-difficulty="medium">Medium</button>
+                <button class="difficulty-btn" data-difficulty="hard">Hard</button>
+            </div>
+            <div class="game-stats">
+                <div class="stat">
+                    <span class="stat-label">Moves:</span>
+                    <span class="stat-value" id="moves">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Pairs:</span>
+                    <span class="stat-value" id="pairs">0/8</span>
+                </div>
+            </div>
+        </div>
+        <div class="game-board" id="game-board"></div>
+        <div class="game-controls">
+            <button id="back-btn" class="back-btn">Back to Arcade</button>
+            <button id="reset-btn" class="reset-btn">Reset Game</button>
+        </div>
+        <div class="win-message" id="win-message">
+            <h2>You Won!</h2>
+            <p>Completed in <span id="final-moves"></span> moves</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

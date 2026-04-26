@@ -47,5 +47,12 @@
         "description": "Classic tic-tac-toe game. Get three in a row before your opponent does!",
         "icon": "",
         "path": "./games/tic-tac-toe/index.html"
+    },
+    {
+        "id": "memory",
+        "title": "Memory Match",
+        "description": "Classic memory card game. Flip cards to find matching pairs and test your memory!",
+        "icon": "",
+        "path": "./games/memory/index.html"
     }
 ]
