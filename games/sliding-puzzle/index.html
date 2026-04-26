@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding Puzzle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="game-header">
+            <h1 class="game-title">Sliding Puzzle</h1>
+            <div class="stats-container">
+                <div class="stat">
+                    <div class="stat-label">Moves</div>
+                    <div class="stat-value" id="move-count">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="game-message" id="game-message"></div>
+        <div class="game-board" id="game-board"></div>
+        <div class="game-controls">
+            <button id="back-btn" class="back-btn">Back to Arcade</button>
+            <button id="reset-btn" class="reset-btn">Reset Game</button>
+        </div>
+        <div class="instructions">
+            <p>Click tiles next to the empty space to slide them. Arrange numbers 1-15 in order to win!</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

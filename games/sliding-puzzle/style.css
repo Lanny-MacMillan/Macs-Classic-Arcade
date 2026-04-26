@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.game-wrapper {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.game-title {
+    font-size: 2rem;
+    color: #333;
+}
+
+.stats-container {
+    display: flex;
+    gap: 15px;
+}
+
+.stat {
+    background: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #667eea;
+}
+
+.game-message {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    min-height: 30px;
+    color: #4caf50;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    background: #bbada0;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    aspect-ratio: 1;
+}
+
+.tile {
+    background: #eee4da;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #776e65;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    user-select: none;
+}
+
+.tile:hover {
+    transform: scale(1.05);
+    background: #ede0c8;
+}
+
+.tile.empty {
+    background: #cdc1b4;
+    cursor: default;
+}
+
+.tile.empty:hover {
+    transform: none;
+    background: #cdc1b4;
+}
+
+.game-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.back-btn,
+.reset-btn {
+    flex: 1;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.back-btn {
+    background: #8b7aff;
+    color: white;
+}
+
+.back-btn:hover {
+    background: #7a69ee;
+    transform: translateY(-2px);
+}
+
+.reset-btn {
+    background: #4caf50;
+    color: white;
+}
+
+.reset-btn:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+}
+
+.instructions {
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .game-wrapper {
+        padding: 20px;
+    }
+
+    .game-title {
+        font-size: 1.5rem;
+    }
+
+    .tile {
+        font-size: 1.5rem;
+    }
+
+    .game-controls {
+        flex-direction: column;
+    }
+}

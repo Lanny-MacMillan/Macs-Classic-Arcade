@@ -68,5 +68,12 @@
         "description": "Classic hand game. Choose rock, paper, or scissors and beat the computer!",
         "icon": "",
         "path": "./games/rock-paper-scissors/index.html"
+    },
+    {
+        "id": "sliding-puzzle",
+        "title": "Sliding Puzzle",
+        "description": "Classic 15-puzzle game. Slide tiles to arrange numbers 1-15 in order!",
+        "icon": "",
+        "path": "./games/sliding-puzzle/index.html"
     }
 ]
