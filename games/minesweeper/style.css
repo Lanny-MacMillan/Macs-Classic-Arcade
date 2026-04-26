@@ -11,44 +11,44 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .game-wrapper {
     background: rgba(30, 30, 30, 0.95);
-    border-radius: 20px;
+    border-radius: 1.25rem;
     box-shadow: 0 20px 60px rgba(255, 0, 0, 0.4);
     border: 2px solid #660000;
-    padding: 30px;
+    padding: 1.875rem;
     max-width: 600px;
     width: 100%;
 }
 
 .game-header {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 1.563rem;
 }
 
 .game-header h1 {
     color: #ff3333;
     font-size: 2.5rem;
-    margin-bottom: 15px;
+    margin-bottom: 0.938rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .difficulty-selector {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin: 15px 0;
+    gap: 0.625rem;
+    margin: 0.938rem 0;
 }
 
 .difficulty-btn {
-    padding: 8px 20px;
+    padding: 0.5rem 1.25rem;
     font-size: 0.95rem;
     font-weight: 600;
     border: 2px solid #cc0000;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     background: #2a2a2a;
     color: #ff6666;
     cursor: pointer;
@@ -70,21 +70,21 @@ body {
 .game-info {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    margin-top: 15px;
+    gap: 1.875rem;
+    margin-top: 0.938rem;
 }
 
 .info-item {
     background: #2a2a2a;
-    padding: 10px 20px;
-    border-radius: 10px;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.625rem;
     border: 2px solid #660000;
 }
 
 .info-item .label {
     font-weight: 600;
     color: #aaa;
-    margin-right: 8px;
+    margin-right: 0.5rem;
 }
 
 .info-item .value {
@@ -97,7 +97,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px;
+    gap: 1.563rem;
 }
 
 .board {
@@ -106,7 +106,7 @@ body {
     gap: 2px;
     background: #1a1a1a;
     padding: 2px;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
     border: 2px solid #660000;
     max-width: 500px;
@@ -125,8 +125,8 @@ body {
     justify-content: center;
     transition: all 0.1s ease;
     user-select: none;
-    min-width: 20px;
-    min-height: 20px;
+    min-width: 1.25rem;
+    min-height: 1.25rem;
     border: 1px solid #555;
 }
 
@@ -169,17 +169,17 @@ body {
 
 .game-controls {
     display: flex;
-    gap: 15px;
+    gap: 0.938rem;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .control-btn {
-    padding: 12px 30px;
+    padding: 0.75rem 1.875rem;
     font-size: 1rem;
     font-weight: 600;
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -223,7 +223,7 @@ body {
 
 @media (max-width: 600px) {
     .game-wrapper {
-        padding: 20px;
+        padding: 1.25rem;
     }
     
     .game-header h1 {
@@ -232,7 +232,7 @@ body {
     
     .game-info {
         flex-direction: column;
-        gap: 10px;
+        gap: 0.625rem;
     }
     
     .board {

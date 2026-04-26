@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .game-wrapper {
@@ -24,8 +24,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
-    padding: 0 20px;
+    margin-bottom: 1.25rem;
+    padding: 0 1.25rem;
 }
 
 h1 {
@@ -42,7 +42,7 @@ h1 {
 
 #gameCanvas {
     border: 3px solid #00ff00;
-    border-radius: 5px;
+    border-radius: 0.313rem;
     background: #000;
     box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
     position: relative;
@@ -56,8 +56,8 @@ h1 {
     text-align: center;
     z-index: 10;
     background: rgba(0, 0, 0, 0.9);
-    padding: 40px;
-    border-radius: 10px;
+    padding: 2.5rem;
+    border-radius: 0.625rem;
 }
 
 .start-screen.hidden {
@@ -68,20 +68,20 @@ h1 {
     font-size: 2rem;
     color: #00ff00;
     text-shadow: 0 0 10px #00ff00;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .start-screen p {
     color: #aaa;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
     font-size: 1.1rem;
 }
 
 .start-btn {
-    padding: 15px 40px;
+    padding: 0.938rem 2.5rem;
     background: linear-gradient(145deg, #00ff00, #008800);
     border: 2px solid #00ff00;
-    border-radius: 5px;
+    border-radius: 0.313rem;
     color: #000;
     font-size: 1.2rem;
     font-family: 'Courier New', monospace;
@@ -104,16 +104,16 @@ h1 {
 }
 
 .game-controls {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     display: flex;
-    gap: 15px;
+    gap: 0.938rem;
     justify-content: center;
     align-items: center;
 }
 
 .control-btn {
-    padding: 12px 30px;
-    border-radius: 5px;
+    padding: 0.75rem 1.875rem;
+    border-radius: 0.313rem;
     font-size: 1rem;
     font-family: 'Courier New', monospace;
     font-weight: bold;
@@ -151,7 +151,7 @@ h1 {
 @media (max-width: 768px) {
     .game-controls {
         flex-direction: column;
-        gap: 10px;
+        gap: 0.625rem;
     }
 
     .control-btn {

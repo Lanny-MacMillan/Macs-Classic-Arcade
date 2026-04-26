@@ -17,8 +17,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    padding: 20px;
+    gap: 1.25rem;
+    padding: 1.25rem;
 }
 
 .game-header {
@@ -27,21 +27,21 @@ body {
 }
 
 .game-header h1 {
-    font-size: 32px;
-    margin-bottom: 15px;
+    font-size: 2rem;
+    margin-bottom: 0.938rem;
     text-shadow: 0 0 10px #0f0;
 }
 
 .game-info {
     display: flex;
-    gap: 30px;
+    gap: 1.875rem;
     justify-content: center;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .info-item {
     display: flex;
-    gap: 8px;
+    gap: 0.5rem;
 }
 
 .info-item .label {
@@ -73,13 +73,13 @@ body {
 
 .game-controls {
     display: flex;
-    gap: 15px;
-    margin-top: 20px;
+    gap: 0.938rem;
+    margin-top: 1.25rem;
 }
 
 .control-btn {
-    padding: 12px 24px;
-    font-size: 16px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
     font-family: 'Courier New', monospace;
     background: #000;
     color: #0f0;

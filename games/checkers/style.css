@@ -11,13 +11,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .container {
     background: white;
-    border-radius: 20px;
-    padding: 30px;
+    border-radius: 1.25rem;
+    padding: 1.875rem;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     max-width: 700px;
     width: 100%;
@@ -26,7 +26,7 @@ body {
 h1 {
     text-align: center;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     font-size: 2.5em;
 }
 
@@ -34,15 +34,15 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
-    padding: 15px;
+    margin-bottom: 1.25rem;
+    padding: 0.938rem;
     background: #f8f9fa;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 .button-group {
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
 }
 
 .hidden {
@@ -51,31 +51,31 @@ h1 {
 
 .start-screen {
     text-align: center;
-    padding: 40px 20px;
+    padding: 2.5rem 1.25rem;
 }
 
 .start-screen h2 {
     color: #333;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
     font-size: 1.8em;
 }
 
 .mode-selection-start {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    max-width: 400px;
+    gap: 1.25rem;
+    max-width: 25rem;
     margin: 0 auto;
 }
 
 .mode-btn {
-    padding: 20px 30px;
+    padding: 1.25rem 1.875rem;
     font-size: 1.3em;
     font-weight: 600;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     border: none;
-    border-radius: 12px;
+    border-radius: 0.75rem;
     cursor: pointer;
     transition: all 0.3s;
     box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
@@ -105,31 +105,31 @@ h1 {
 }
 
 .mode-selection {
-    margin-bottom: 20px;
-    padding: 15px;
+    margin-bottom: 1.25rem;
+    padding: 0.938rem;
     background: #f8f9fa;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 .mode-selection h3 {
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
     color: #333;
     font-size: 1.1em;
 }
 
 .mode-options {
     display: flex;
-    gap: 15px;
+    gap: 0.938rem;
 }
 
 .mode-option {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 0.5rem;
     cursor: pointer;
-    padding: 8px 15px;
+    padding: 0.5rem 0.938rem;
     background: white;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     border: 2px solid #ddd;
     transition: all 0.2s;
 }
@@ -152,14 +152,14 @@ h1 {
 .current-player {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem;
     font-size: 1.2em;
     font-weight: 600;
 }
 
 .player-indicator {
-    padding: 5px 15px;
-    border-radius: 20px;
+    padding: 0.313rem 0.938rem;
+    border-radius: 1.25rem;
     background: #e74c3c;
     color: white;
 }
@@ -169,13 +169,13 @@ h1 {
 }
 
 .reset-btn, .back-btn {
-    padding: 10px 25px;
+    padding: 0.625rem 1.563rem;
     font-size: 1em;
     font-weight: 600;
     background: #3498db;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     cursor: pointer;
     transition: all 0.3s;
 }
@@ -202,11 +202,11 @@ h1 {
     grid-template-rows: repeat(8, 1fr);
     gap: 0;
     width: 100%;
-    max-width: 600px;
+    max-width: 37.5rem;
     aspect-ratio: 1;
-    margin: 0 auto 20px;
+    margin: 0 auto 1.25rem;
     border: 4px solid #333;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     overflow: hidden;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
@@ -301,16 +301,16 @@ h1 {
 
 .game-status {
     text-align: center;
-    margin: 20px 0;
-    min-height: 30px;
+    margin: 1.25rem 0;
+    min-height: 1.875rem;
 }
 
 .message {
     font-size: 1.3em;
     font-weight: 600;
     color: #e74c3c;
-    padding: 10px;
-    border-radius: 8px;
+    padding: 0.625rem;
+    border-radius: 0.5rem;
 }
 
 .message.winner {
@@ -320,16 +320,16 @@ h1 {
 }
 
 .move-history {
-    margin-top: 20px;
-    padding: 15px;
+    margin-top: 1.25rem;
+    padding: 0.938rem;
     background: #f8f9fa;
-    border-radius: 10px;
-    max-height: 200px;
+    border-radius: 0.625rem;
+    max-height: 12.5rem;
     overflow-y: auto;
 }
 
 .move-history h3 {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     color: #333;
     font-size: 1.2em;
 }
@@ -337,13 +337,13 @@ h1 {
 .move-list {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 0.313rem;
 }
 
 .move-item {
-    padding: 8px 12px;
+    padding: 0.5rem 0.75rem;
     background: white;
-    border-radius: 5px;
+    border-radius: 0.313rem;
     border-left: 4px solid #3498db;
     font-size: 0.95em;
 }
@@ -354,7 +354,7 @@ h1 {
 
 @media (max-width: 768px) {
     .container {
-        padding: 15px;
+        padding: 0.938rem;
     }
 
     h1 {
@@ -363,7 +363,7 @@ h1 {
 
     .game-info {
         flex-direction: column;
-        gap: 10px;
+        gap: 0.625rem;
     }
 
     .button-group {
@@ -385,6 +385,6 @@ h1 {
 
     .mode-btn {
         font-size: 1.1em;
-        padding: 15px 20px;
+        padding: 0.938rem 1.25rem;
     }
 }

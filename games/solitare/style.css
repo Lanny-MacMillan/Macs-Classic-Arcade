@@ -11,15 +11,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 #solitaire-container {
     width: 100%;
     max-width: 1200px;
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 20px;
+    border-radius: 0.75rem;
+    padding: 1.25rem;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     max-height: 95vh;
     overflow-y: auto;
@@ -29,11 +29,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
-    padding-bottom: 15px;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.938rem;
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 0.938rem;
 }
 
 .game-header h1 {
@@ -43,23 +43,23 @@ body {
 
 .header-controls {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
     align-items: center;
     flex-wrap: wrap;
 }
 
 .difficulty-selector {
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
 }
 
 .difficulty-btn {
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
     font-size: 14px;
     background: rgba(255, 255, 255, 0.2);
     color: white;
     border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 6px;
+    border-radius: 0.375rem;
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: 600;
@@ -77,16 +77,16 @@ body {
 
 .action-buttons {
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
 }
 
 .btn-reset,
 .btn-back {
-    padding: 10px 24px;
+    padding: 0.625rem 1.5rem;
     font-size: 16px;
     color: white;
     border: none;
-    border-radius: 6px;
+    border-radius: 0.375rem;
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: 600;
@@ -115,7 +115,7 @@ body {
 .game-board {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 1.875rem;
 }
 
 .top-section {
@@ -125,19 +125,19 @@ body {
 
 .stock-waste-area {
     display: flex;
-    gap: 15px;
+    gap: 0.938rem;
 }
 
 .foundations {
     display: flex;
-    gap: 15px;
+    gap: 0.938rem;
 }
 
 .pile {
     width: 100px;
     height: 140px;
     border: 2px dashed rgba(255, 255, 255, 0.3);
-    border-radius: 8px;
+    border-radius: 0.5rem;
     position: relative;
     background: rgba(0, 0, 0, 0.2);
 }
@@ -177,7 +177,7 @@ body {
 
 .tableau {
     display: flex;
-    gap: 15px;
+    gap: 0.938rem;
     justify-content: center;
     min-height: 500px;
 }
@@ -193,7 +193,7 @@ body {
     height: 140px;
     background: white;
     border: 2px solid #333;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -229,7 +229,7 @@ body {
 .card-content {
     display: flex;
     flex-direction: column;
-    padding: 8px;
+    padding: 0.5rem;
     height: 100%;
 }
 
@@ -272,8 +272,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background: white;
-    padding: 40px 60px;
-    border-radius: 12px;
+    padding: 2.5rem 3.75rem;
+    border-radius: 0.75rem;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
     text-align: center;
     z-index: 1000;
@@ -282,7 +282,7 @@ body {
 .win-message h2 {
     font-size: 2.5rem;
     color: #4CAF50;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .win-message p {
@@ -296,7 +296,7 @@ body {
 
 @media (max-width: 768px) {
     .tableau {
-        gap: 8px;
+        gap: 0.5rem;
     }
     
     .card,
@@ -339,13 +339,13 @@ body {
     }
     
     .difficulty-btn {
-        padding: 6px 12px;
+        padding: 0.375rem 0.75rem;
         font-size: 12px;
     }
     
     .btn-reset,
     .btn-back {
-        padding: 8px 16px;
+        padding: 0.5rem 1rem;
         font-size: 14px;
     }
 }
