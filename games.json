@@ -29,9 +29,16 @@
     },
     {
         "id": "solitaire",
-        "title": "Klondike Solitaire",
+        "title": "Solitaire",
         "description": "Classic solitaire card game. Build foundations from Ace to King in each suit!",
         "icon": "",
         "path": "./games/solitare/index.html"
+    },
+    {
+        "id": "invaders",
+        "title": "Invaders",
+        "description": "Classic space invaders arcade game. Destroy alien waves before they reach Earth!",
+        "icon": "",
+        "path": "./games/invaders/index.html"
     }
 ]

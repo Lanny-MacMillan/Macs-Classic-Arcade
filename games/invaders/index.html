@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invaders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="game-header">
+            <h1>Invaders</h1>
+            <div class="game-info">
+                <div class="info-item">
+                    <span class="label">Level:</span>
+                    <span id="level-display" class="value">1</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Score:</span>
+                    <span id="score-display" class="value">0</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Lives:</span>
+                    <span id="lives-display" class="value">3</span>
+                </div>
+            </div>
+        </div>
+        
+        <div id="game-container">
+            <canvas id="gameCanvas"></canvas>
+            <div id="gameStatus"></div>
+        </div>
+        
+        <div class="game-controls">
+            <button id="back-btn" class="control-btn back-btn">Back to Arcade</button>
+            <button id="pause-btn" class="control-btn pause-btn">Pause</button>
+            <button id="restart-btn" class="control-btn restart-btn">Restart</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
