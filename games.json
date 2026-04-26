@@ -1,0 +1,9 @@
+[
+    {
+        "id": "snake",
+        "title": "Classic Snake",
+        "description": "Classic snake game. Eat food, grow longer, don't hit walls or yourself!",
+        "icon": "",
+        "path": "./games/snake/index.html"
+    }
+]

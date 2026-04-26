@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a0033 100%);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.game-wrapper {
+    text-align: center;
+    position: relative;
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+.score {
+    font-size: 1.5rem;
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff;
+}
+
+#gameCanvas {
+    border: 3px solid #00ff00;
+    border-radius: 5px;
+    background: #000;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+    position: relative;
+}
+
+.start-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.start-screen.hidden {
+    display: none;
+}
+
+.start-screen h2 {
+    font-size: 2rem;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;
+    margin-bottom: 20px;
+}
+
+.start-screen p {
+    color: #aaa;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.start-btn {
+    padding: 15px 40px;
+    background: linear-gradient(145deg, #00ff00, #008800);
+    border: 2px solid #00ff00;
+    border-radius: 5px;
+    color: #000;
+    font-size: 1.2rem;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+    animation: pulse 2s infinite;
+}
+
+.start-btn:hover {
+    background: linear-gradient(145deg, #00ff66, #00aa00);
+    box-shadow: 0 0 25px rgba(0, 255, 0, 0.8);
+    transform: scale(1.1);
+}
+
+@keyframes pulse {
+    0%, 100% { box-shadow: 0 0 15px rgba(0, 255, 0, 0.5); }
+    50% { box-shadow: 0 0 25px rgba(0, 255, 0, 0.8); }
+}
+
+.game-controls {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.control-btn {
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid;
+}
+
+.back-btn {
+    background: linear-gradient(145deg, #00ff00, #008800);
+    border-color: #00ff00;
+    color: #000;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.back-btn:hover {
+    background: linear-gradient(145deg, #00ff66, #00aa00);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+    transform: scale(1.05);
+}
+
+.restart-btn {
+    background: linear-gradient(145deg, #00ff00, #008800);
+    border-color: #00ff00;
+    color: #000;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.restart-btn:hover {
+    background: linear-gradient(145deg, #00ff66, #00aa00);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .game-controls {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .control-btn {
+        width: 100%;
+        max-width: 250px;
+    }
+}
