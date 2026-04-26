@@ -7,6 +7,13 @@
         "path": "./games/snake/index.html"
     },
     {
+        "id": "2048",
+        "title": "2048",
+        "description": "Slide numbered tiles to combine them and reach 2048. Addictive puzzle game!",
+        "icon": "",
+        "path": "./games/2048/index.html"
+    },
+    {
         "id": "chess",
         "title": "Chess",
         "description": "Classic chess game. Play against a friend with full move validation and checkmate detection.",
