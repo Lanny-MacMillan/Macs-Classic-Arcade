@@ -12,5 +12,12 @@
         "description": "Classic chess game. Play against a friend with full move validation and checkmate detection.",
         "icon": "",
         "path": "./games/chess/index.html"
+    },
+    {
+        "id": "checkers",
+        "title": "Checkers",
+        "description": "Classic checkers game. Jump your opponent's pieces and crown your kings to victory!",
+        "icon": "",
+        "path": "./games/checkers/index.html"
     }
 ]

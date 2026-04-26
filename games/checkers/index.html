@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkers Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Checkers</h1>
+        
+        <div id="startScreen" class="start-screen">
+            <h2>Choose Game Mode</h2>
+            <div class="mode-selection-start">
+                <button class="mode-btn" data-mode="2player">2 Players</button>
+                <button class="mode-btn" data-mode="ai">vs Computer</button>
+            </div>
+        </div>
+
+        <div id="gameContainer" class="game-container hidden">
+            <div class="game-info">
+                <div class="current-player">
+                    <span>Current Player:</span>
+                    <span id="playerTurn" class="player-indicator">Player 1</span>
+                </div>
+                <div class="button-group">
+                    <button id="backBtn" class="control-btn back-btn">Back to Arcade</button>
+                    <button id="resetBtn" class="reset-btn">Reset Game</button>
+                </div>
+            </div>
+
+            <div id="gameBoard" class="game-board"></div>
+
+            <div class="game-status">
+                <div id="gameMessage" class="message"></div>
+            </div>
+
+            <div class="move-history">
+                <h3>Move History</h3>
+                <div id="moveList" class="move-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
