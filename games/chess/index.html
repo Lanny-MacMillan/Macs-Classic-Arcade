@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="game-header">
+            <h1>Chess</h1>
+            <div class="turn-indicator">
+                Turn: <span id="current-turn">White</span>
+            </div>
+        </div>
+        
+        <div class="game-container">
+            <div class="board-section">
+                <div id="chessboard" class="chessboard"></div>
+                <div class="game-controls">
+                    <button id="back-btn" class="control-btn back-btn">Back to Arcade</button>
+                    <button id="reset-btn" class="control-btn reset-btn">Reset Game</button>
+                </div>
+            </div>
+            
+            <div class="sidebar">
+                <div class="mode-box">
+                    <h3>Game Mode</h3>
+                    <div class="mode-controls">
+                        <label class="mode-option">
+                            <input type="radio" name="game-mode" value="2player" checked>
+                            <span>2 Player</span>
+                        </label>
+                        <label class="mode-option">
+                            <input type="radio" name="game-mode" value="ai">
+                            <span>vs AI</span>
+                        </label>
+                    </div>
+                    <div id="difficulty-container" class="difficulty-container" style="display: none;">
+                        <label for="difficulty">Difficulty:</label>
+                        <select id="difficulty">
+                            <option value="easy">Easy</option>
+                            <option value="medium" selected>Medium</option>
+                            <option value="hard">Hard</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="status-box">
+                    <h3>Game Status</h3>
+                    <div id="game-status">Ready to play</div>
+                </div>
+                <div class="history-box">
+                    <h3>Move History</h3>
+                    <div id="move-history"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
