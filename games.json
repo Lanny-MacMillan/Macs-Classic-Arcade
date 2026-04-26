@@ -19,5 +19,12 @@
         "description": "Classic checkers game. Jump your opponent's pieces and crown your kings to victory!",
         "icon": "",
         "path": "./games/checkers/index.html"
+    },
+    {
+        "id": "minesweeper",
+        "title": "Minesweeper",
+        "description": "Classic minesweeper game. Flag the mines and reveal all safe cells to win!",
+        "icon": "",
+        "path": "./games/minesweeper/index.html"
     }
 ]

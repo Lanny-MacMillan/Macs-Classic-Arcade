@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a1a1a 0%, #4a0000 50%, #1a1a1a 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.game-wrapper {
+    background: rgba(30, 30, 30, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(255, 0, 0, 0.4);
+    border: 2px solid #660000;
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.game-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.game-header h1 {
+    color: #ff3333;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.difficulty-selector {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.difficulty-btn {
+    padding: 8px 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: 2px solid #cc0000;
+    border-radius: 8px;
+    background: #2a2a2a;
+    color: #ff6666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.difficulty-btn:hover {
+    background: #3a3a3a;
+    border-color: #ff3333;
+    transform: translateY(-1px);
+}
+
+.difficulty-btn.active {
+    background: #cc0000;
+    color: white;
+    border-color: #ff0000;
+}
+
+.game-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.info-item {
+    background: #2a2a2a;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #660000;
+}
+
+.info-item .label {
+    font-weight: 600;
+    color: #aaa;
+    margin-right: 8px;
+}
+
+.info-item .value {
+    font-weight: 700;
+    color: #ff6666;
+    font-size: 1.1rem;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 2px;
+    background: #1a1a1a;
+    padding: 2px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
+    border: 2px solid #660000;
+    max-width: 500px;
+    width: 100%;
+}
+
+.cell {
+    aspect-ratio: 1;
+    background: #888;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.1s ease;
+    user-select: none;
+    min-width: 20px;
+    min-height: 20px;
+    border: 1px solid #555;
+}
+
+.cell:hover:not(.revealed):not(.flagged) {
+    background: #999;
+    transform: scale(0.95);
+}
+
+.cell:active:not(.revealed) {
+    transform: scale(0.9);
+}
+
+.cell.revealed {
+    background: #d0d0d0;
+    cursor: default;
+    border: 1px solid #999;
+}
+
+.cell.flagged {
+    background: #cc0000;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.cell.mine {
+    background: #000;
+    color: #fff;
+    font-size: 1.2rem;
+    box-shadow: inset 0 0 10px rgba(255, 0, 0, 0.6);
+}
+
+.cell[data-count="1"] { color: #0066ff; }
+.cell[data-count="2"] { color: #009900; }
+.cell[data-count="3"] { color: #ff0000; }
+.cell[data-count="4"] { color: #000099; }
+.cell[data-count="5"] { color: #990000; }
+.cell[data-count="6"] { color: #009999; }
+.cell[data-count="7"] { color: #000000; }
+.cell[data-count="8"] { color: #808080; }
+
+.game-controls {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.control-btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.reset-btn {
+    background: #cc0000;
+    color: white;
+}
+
+.reset-btn:hover {
+    background: #ff0000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 0, 0, 0.5);
+}
+
+.back-btn {
+    background: #2a2a2a;
+    color: #ccc;
+    border: 2px solid #555;
+}
+
+.back-btn:hover {
+    background: #3a3a3a;
+    border-color: #888;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+}
+
+.control-btn:active {
+    transform: translateY(0);
+}
+
+#game-status.won {
+    color: #44ff44;
+}
+
+#game-status.lost {
+    color: #ff3333;
+}
+
+@media (max-width: 600px) {
+    .game-wrapper {
+        padding: 20px;
+    }
+    
+    .game-header h1 {
+        font-size: 2rem;
+    }
+    
+    .game-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .board {
+        max-width: 100%;
+    }
+    
+    .cell {
+        font-size: 0.8rem;
+    }
+}
