@@ -75,5 +75,12 @@
         "description": "Classic 15-puzzle game. Slide tiles to arrange numbers 1-15 in order!",
         "icon": "",
         "path": "./games/sliding-puzzle/index.html"
+    },
+    {
+        "id": "sudoku",
+        "title": "Sudoku",
+        "description": "Classic number puzzle. Fill the 9x9 grid so each row, column, and 3x3 box contains 1-9!",
+        "icon": "",
+        "path": "./games/sudoku/index.html"
     }
 ]

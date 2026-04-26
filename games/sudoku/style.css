@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.game-wrapper {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+}
+
+.game-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.game-title {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.game-status {
+    color: #666;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 8px;
+    background: #f0f0f0;
+}
+
+.game-status.win {
+    background: #4caf50;
+    color: white;
+    font-weight: bold;
+}
+
+.game-status.error {
+    background: #ff5252;
+    color: white;
+}
+
+.sudoku-board {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 0;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto 30px;
+    border: 3px solid #333;
+    background: #333;
+}
+
+.sudoku-cell {
+    aspect-ratio: 1;
+    border: 1px solid #ddd;
+    background: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #333;
+}
+
+.sudoku-cell:hover:not(.fixed) {
+    background: #e3f2fd;
+}
+
+.sudoku-cell.fixed {
+    background: #f5f5f5;
+    color: #000;
+    cursor: default;
+}
+
+.sudoku-cell.selected {
+    background: #bbdefb;
+    outline: 3px solid #2196f3;
+    outline-offset: -3px;
+}
+
+.sudoku-cell.invalid {
+    background: #ffebee;
+    color: #f44336;
+}
+
+.sudoku-cell:nth-child(3n):not(:nth-child(9n)) {
+    border-right: 3px solid #333;
+}
+
+.sudoku-cell:nth-child(n+19):nth-child(-n+27),
+.sudoku-cell:nth-child(n+46):nth-child(-n+54) {
+    border-bottom: 3px solid #333;
+}
+
+.game-controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.back-btn {
+    background: #6c757d;
+    color: white;
+}
+
+.back-btn:hover {
+    background: #5a6268;
+    transform: translateY(-2px);
+}
+
+.reset-btn {
+    background: #ff9800;
+    color: white;
+}
+
+.reset-btn:hover {
+    background: #f57c00;
+    transform: translateY(-2px);
+}
+
+.new-puzzle-btn {
+    background: #4caf50;
+    color: white;
+}
+
+.new-puzzle-btn:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    .game-wrapper {
+        padding: 20px;
+    }
+    
+    .game-title {
+        font-size: 2rem;
+    }
+    
+    .sudoku-cell {
+        font-size: 1.2rem;
+    }
+    
+    button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
