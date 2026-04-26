@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#solitaire-container {
+    width: 100%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    max-height: 95vh;
+    overflow-y: auto;
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.game-header h1 {
+    color: white;
+    font-size: 2rem;
+}
+
+.header-controls {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.difficulty-selector {
+    display: flex;
+    gap: 10px;
+}
+
+.difficulty-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.difficulty-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.difficulty-btn.active {
+    background: #2196F3;
+    border-color: #2196F3;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-reset,
+.btn-back {
+    padding: 10px 24px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.btn-reset {
+    background: #4CAF50;
+}
+
+.btn-reset:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-back {
+    background: #607d8b;
+}
+
+.btn-back:hover {
+    background: #546e7a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.game-board {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stock-waste-area {
+    display: flex;
+    gap: 15px;
+}
+
+.foundations {
+    display: flex;
+    gap: 15px;
+}
+
+.pile {
+    width: 100px;
+    height: 140px;
+    border: 2px dashed rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.waste-pile {
+    width: 160px;
+}
+
+.stock-pile {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.stock-pile:hover {
+    border-color: rgba(255, 255, 255, 0.6);
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.foundation-pile {
+    border-style: solid;
+}
+
+.foundation-pile::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    opacity: 0.2;
+}
+
+.foundation-pile[data-suit="hearts"]::before { content: '♥'; color: #e74c3c; }
+.foundation-pile[data-suit="diamonds"]::before { content: '♦'; color: #e74c3c; }
+.foundation-pile[data-suit="clubs"]::before { content: '♣'; color: #2c3e50; }
+.foundation-pile[data-suit="spades"]::before { content: '♠'; color: #2c3e50; }
+
+.tableau {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    min-height: 500px;
+}
+
+.tableau-column {
+    width: 100px;
+    min-height: 500px;
+    position: relative;
+}
+
+.card {
+    width: 100px;
+    height: 140px;
+    background: white;
+    border: 2px solid #333;
+    border-radius: 8px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.card.dragging {
+    opacity: 0.5;
+    cursor: grabbing;
+}
+
+.card.face-down {
+    background: linear-gradient(135deg, #c0392b 0%, #8e44ad 100%);
+    cursor: default;
+}
+
+.card.face-down:hover {
+    transform: none;
+}
+
+.card.face-down .card-content {
+    display: none;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    height: 100%;
+}
+
+.card-rank {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.card-suit {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.card.red {
+    color: #e74c3c;
+}
+
+.card.black {
+    color: #2c3e50;
+}
+
+.card-center {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+}
+
+.pile.highlight {
+    border-color: #4CAF50;
+    border-width: 3px;
+    background: rgba(76, 175, 80, 0.2);
+}
+
+.win-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 40px 60px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 1000;
+}
+
+.win-message h2 {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.win-message p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.win-message.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .tableau {
+        gap: 8px;
+    }
+    
+    .card,
+    .pile,
+    .tableau-column {
+        width: 70px;
+    }
+    
+    .card {
+        height: 98px;
+    }
+    
+    .pile {
+        height: 98px;
+    }
+    
+    .waste-pile {
+        width: 120px;
+    }
+    
+    .card-rank {
+        font-size: 18px;
+    }
+    
+    .card-suit {
+        font-size: 16px;
+    }
+    
+    .card-center {
+        font-size: 32px;
+    }
+    
+    .game-header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .header-controls {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .difficulty-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    
+    .btn-reset,
+    .btn-back {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}

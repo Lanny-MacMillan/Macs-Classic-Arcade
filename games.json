@@ -26,5 +26,12 @@
         "description": "Classic minesweeper game. Flag the mines and reveal all safe cells to win!",
         "icon": "",
         "path": "./games/minesweeper/index.html"
+    },
+    {
+        "id": "solitaire",
+        "title": "Klondike Solitaire",
+        "description": "Classic solitaire card game. Build foundations from Ace to King in each suit!",
+        "icon": "",
+        "path": "./games/solitare/index.html"
     }
 ]

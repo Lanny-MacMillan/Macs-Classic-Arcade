@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klondike Solitaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="solitaire-container">
+        <div class="game-header">
+            <h1>Klondike Solitaire</h1>
+            <div class="header-controls">
+                <div class="difficulty-selector">
+                    <button id="easy-btn" class="difficulty-btn">Easy (1 Card)</button>
+                    <button id="normal-btn" class="difficulty-btn active">Normal (3 Cards)</button>
+                </div>
+                <div class="action-buttons">
+                    <button id="back-btn" class="btn-back">Back to Arcade</button>
+                    <button id="reset-btn" class="btn-reset">New Game</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-board">
+            <div class="top-section">
+                <div class="stock-waste-area">
+                    <div id="stock" class="pile stock-pile"></div>
+                    <div id="waste" class="pile waste-pile"></div>
+                </div>
+                
+                <div class="foundations">
+                    <div id="foundation-0" class="pile foundation-pile" data-suit="hearts"></div>
+                    <div id="foundation-1" class="pile foundation-pile" data-suit="diamonds"></div>
+                    <div id="foundation-2" class="pile foundation-pile" data-suit="clubs"></div>
+                    <div id="foundation-3" class="pile foundation-pile" data-suit="spades"></div>
+                </div>
+            </div>
+
+            <div class="tableau">
+                <div id="tableau-0" class="tableau-column" data-column="0"></div>
+                <div id="tableau-1" class="tableau-column" data-column="1"></div>
+                <div id="tableau-2" class="tableau-column" data-column="2"></div>
+                <div id="tableau-3" class="tableau-column" data-column="3"></div>
+                <div id="tableau-4" class="tableau-column" data-column="4"></div>
+                <div id="tableau-5" class="tableau-column" data-column="5"></div>
+                <div id="tableau-6" class="tableau-column" data-column="6"></div>
+            </div>
+        </div>
+
+        <div id="win-message" class="win-message hidden">
+            <h2>You Win!</h2>
+            <p>Congratulations! All foundations complete.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
