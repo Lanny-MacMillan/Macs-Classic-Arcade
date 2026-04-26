@@ -89,5 +89,12 @@
         "description": "Classic number puzzle. Fill the 9x9 grid so each row, column, and 3x3 box contains 1-9!",
         "icon": "",
         "path": "./games/sudoku/index.html"
+    },
+    {
+        "id": "flappy",
+        "title": "Flappy Bird",
+        "description": "Side-scrolling game. Tap or press space to flap through the pipes without crashing!",
+        "icon": "",
+        "path": "./games/flappy/index.html"
     }
 ]
