@@ -19,7 +19,7 @@ body {
     border-radius: 20px;
     padding: 30px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    max-width: 1200px;
+    max-width: 1100px;
     width: 100%;
 }
 
@@ -49,8 +49,8 @@ body {
 
 .game-container {
     display: grid;
-    grid-template-columns: auto 300px;
-    gap: 30px;
+    grid-template-columns: max-content 270px;
+    gap: 20px;
 }
 
 .board-section {
@@ -61,20 +61,20 @@ body {
 
 .chessboard {
     display: grid;
-    grid-template-columns: repeat(8, 70px);
-    grid-template-rows: repeat(8, 70px);
+    grid-template-columns: repeat(8, 90px);
+    grid-template-rows: repeat(8, 90px);
     border: 3px solid #333;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     background: #fff;
 }
 
 .square {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 48px;
+    font-size: 56px;
     cursor: pointer;
     transition: all 0.2s ease;
     position: relative;
