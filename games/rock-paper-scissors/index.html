@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="game-header">
+            <h1 class="game-title">Rock Paper Scissors</h1>
+            <div class="game-status">Make your choice!</div>
+        </div>
+        
+        <div class="score-board">
+            <div class="score-item">
+                <div class="score-label">Player</div>
+                <div class="score-value" id="player-score">0</div>
+            </div>
+            <div class="score-item">
+                <div class="score-label">Computer</div>
+                <div class="score-value" id="computer-score">0</div>
+            </div>
+        </div>
+
+        <div class="choices-container">
+            <div class="player-choice">
+                <div class="choice-label">You</div>
+                <div class="choice-display" id="player-display">?</div>
+            </div>
+            <div class="vs-text">VS</div>
+            <div class="computer-choice">
+                <div class="choice-label">Computer</div>
+                <div class="choice-display" id="computer-display">?</div>
+            </div>
+        </div>
+
+        <div class="game-controls">
+            <button class="choice-btn" data-choice="rock">Rock</button>
+            <button class="choice-btn" data-choice="paper">Paper</button>
+            <button class="choice-btn" data-choice="scissors">Scissors</button>
+        </div>
+
+        <div class="action-buttons">
+            <button id="back-btn" class="back-btn">Back to Arcade</button>
+            <button class="reset-btn">Reset Score</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

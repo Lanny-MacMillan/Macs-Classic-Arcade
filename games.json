@@ -54,5 +54,12 @@
         "description": "Classic memory card game. Flip cards to find matching pairs and test your memory!",
         "icon": "",
         "path": "./games/memory/index.html"
+    },
+    {
+        "id": "rock-paper-scissors",
+        "title": "Rock Paper Scissors",
+        "description": "Classic hand game. Choose rock, paper, or scissors and beat the computer!",
+        "icon": "",
+        "path": "./games/rock-paper-scissors/index.html"
     }
 ]
