@@ -40,5 +40,12 @@
         "description": "Classic space invaders arcade game. Destroy alien waves before they reach Earth!",
         "icon": "",
         "path": "./games/invaders/index.html"
+    },
+    {
+        "id": "tic-tac-toe",
+        "title": "Tic-Tac-Toe",
+        "description": "Classic tic-tac-toe game. Get three in a row before your opponent does!",
+        "icon": "",
+        "path": "./games/tic-tac-toe/index.html"
     }
 ]
