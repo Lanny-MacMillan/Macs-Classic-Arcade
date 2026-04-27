@@ -229,5 +229,12 @@
         "description": "5-level boss battle arena. Dodge attack patterns, upgrade your weapons, and defeat all guardians!",
         "icon": "",
         "path": "./games/boss-fight/index.html"
+    },
+    {
+        "id": "platformer",
+        "title": "Platformer",
+        "description": "5-level platformer with gravity physics. Collect coins, avoid hazards, and reach the switch to advance!",
+        "icon": "",
+        "path": "./games/platformer/index.html"
     }
 ]
