@@ -243,5 +243,19 @@
         "description": "Navigate through rotating obstacles by matching your color. Pass through the right segments and collect color switchers!",
         "icon": "",
         "path": "./games/color-switch/index.html"
+    },
+    {
+        "id": "vampire-survivor",
+        "title": "Vampire Survivor",
+        "description": "Survive endless waves of enemies with auto-attacking weapons. Level up and choose powerful upgrades!",
+        "icon": "",
+        "path": "./games/vampire-survivor/index.html"
+    },
+    {
+        "id": "dungeon-crawler",
+        "title": "Dungeon Crawler",
+        "description": "Explore procedurally generated dungeon rooms. Fight enemies, collect keys, and progress deeper into the dungeon!",
+        "icon": "",
+        "path": "./games/dungeon-crawler/index.html"
     }
 ]
