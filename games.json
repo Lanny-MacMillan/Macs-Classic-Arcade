@@ -103,5 +103,12 @@
         "description": "Side-scrolling game. Tap or press space to flap through the pipes without crashing!",
         "icon": "",
         "path": "./games/flappy/index.html"
+    },
+    {
+        "id": "reaction",
+        "title": "Reaction Timer",
+        "description": "Test your reflexes! Click as fast as you can when the screen turns green.",
+        "icon": "",
+        "path": "./games/reaction/index.html"
     }
 ]

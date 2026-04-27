@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="game-header">
+            <h1>Reaction Timer</h1>
+            <div class="best-score">Best: <span id="best-time">-</span></div>
+        </div>
+        
+        <div id="game-area" class="game-area">
+            <div id="start-screen" class="screen-content">
+                <h2>Test Your Reflexes</h2>
+                <p>Click when the screen turns green</p>
+                <button id="start-btn" class="game-btn">Start</button>
+            </div>
+            
+            <div id="waiting-screen" class="screen-content hidden">
+                <h2>Wait for it...</h2>
+                <p>Don't click yet</p>
+            </div>
+            
+            <div id="ready-screen" class="screen-content hidden">
+                <h2>CLICK NOW!</h2>
+            </div>
+            
+            <div id="result-screen" class="screen-content hidden">
+                <h2 id="result-title">Too Early!</h2>
+                <p id="result-text">Wait for the screen to turn green</p>
+                <p id="reaction-time" class="reaction-time"></p>
+                <button id="retry-btn" class="game-btn">Try Again</button>
+            </div>
+        </div>
+        
+        <div class="game-controls">
+            <button id="back-btn" class="control-btn back-btn">Back to Arcade</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
