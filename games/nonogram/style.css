@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.game-wrapper {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.game-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.game-header h1 {
+  color: #333;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.info-btn {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #667eea;
+  color: white;
+  border: none;
+  font-size: .5em;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.info-btn:hover {
+  background: #5568d3;
+  transform: scale(1.1);
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.4);
+}
+
+.instructions {
+  background: #f0f7ff;
+  border: 2px solid #667eea;
+  border-radius: 8px;
+  padding: 15px 45px 15px 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.instructions p {
+  color: #333;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.close-instructions {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: #667eea;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.close-instructions:hover {
+  color: #5568d3;
+  transform: scale(1.1);
+}
+
+.game-info {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.check-btn,
+.clear-btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.check-btn {
+  background: #4CAF50;
+  color: white;
+}
+
+.check-btn:hover {
+  background: #45a049;
+  transform: translateY(-2px);
+}
+
+.clear-btn {
+  background: #ff9800;
+  color: white;
+}
+
+.clear-btn:hover {
+  background: #e68900;
+  transform: translateY(-2px);
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+#puzzle-grid {
+  display: grid;
+  gap: 2px;
+  background: #ddd;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.clue-cell {
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #666;
+  font-size: 0.9em;
+  user-select: none;
+}
+
+.clue-cell.empty {
+  background: transparent;
+}
+
+.grid-cell {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.grid-cell:hover {
+  background: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.grid-cell.filled {
+  background: #333;
+}
+
+.grid-cell.marked {
+  background: white;
+}
+
+.grid-cell.marked::after {
+  content: "X";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #999;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.message {
+  text-align: center;
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.message.success {
+  background: #d4edda;
+  color: #155724;
+  border: 2px solid #c3e6cb;
+}
+
+.message.error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 2px solid #f5c6cb;
+}
+
+.game-controls {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.control-btn {
+  padding: 12px 25px;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  background: #667eea;
+  color: white;
+}
+
+.control-btn:hover {
+  background: #5568d3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.back-btn {
+  background: #6c757d;
+}
+
+.back-btn:hover {
+  background: #5a6268;
+  box-shadow: 0 4px 12px rgba(108, 117, 125, 0.4);
+}
+
+@media (max-width: 600px) {
+  .game-wrapper {
+    padding: 20px;
+  }
+
+  .game-header h1 {
+    font-size: 2em;
+  }
+
+  .grid-cell {
+    width: 25px;
+    height: 25px;
+  }
+
+  .clue-cell {
+    font-size: 0.8em;
+  }
+
+  .game-info {
+    flex-direction: column;
+  }
+
+  .check-btn,
+  .clear-btn {
+    width: 100%;
+  }
+}

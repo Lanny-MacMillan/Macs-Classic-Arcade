@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nonogram</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="game-header">
+            <div class="title-container">
+                <h1>Nonogram</h1>
+                <button class="info-btn" id="info-btn" title="How to Play">?</button>
+            </div>
+            <div class="game-info">
+                <button id="check-btn" class="check-btn">Check Solution</button>
+                <button id="clear-btn" class="clear-btn">Clear Grid</button>
+            </div>
+        </div>
+        <div class="instructions" id="instructions" style="display: none;">
+            <button class="close-instructions" id="close-instructions">×</button>
+            <p><strong>How to Play:</strong> The numbers show how many consecutive filled cells are in each row/column. For example, "3 1" means a group of 3 filled cells, then at least one gap, then 1 filled cell. Left-click to fill, right-click to mark empty.</p>
+        </div>
+        <div id="game-container" class="game-container">
+            <div id="puzzle-grid"></div>
+        </div>
+        <div id="message" class="message"></div>
+        <div class="game-controls">
+            <button id="back-btn" class="control-btn back-btn">Back to Arcade</button>
+            <button id="new-puzzle-btn" class="control-btn">New Puzzle</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

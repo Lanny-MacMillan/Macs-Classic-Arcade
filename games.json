@@ -140,6 +140,13 @@
         "path": "./games/sudoku/index.html"
     },
     {
+        "id": "nonogram",
+        "title": "Nonogram",
+        "description": "Logic puzzle game. Reveal hidden pictures by filling cells based on number clues for rows and columns!",
+        "icon": "",
+        "path": "./games/nonogram/index.html"
+    },
+    {
         "id": "flappy",
         "title": "Flappy Bird",
         "description": "Side-scrolling game. Tap or press space to flap through the pipes without crashing!",
