@@ -14,6 +14,13 @@
         "path": "./games/pong/index.html"
     },
     {
+        "id": "avoider",
+        "title": "Avoider",
+        "description": "Fast-paced dodging game. Control your player and avoid falling obstacles for as long as you can!",
+        "icon": "",
+        "path": "./games/avoider/index.html"
+    },
+    {
         "id": "snake",
         "title": "Classic Snake",
         "description": "Classic snake game. Eat food, grow longer, don't hit walls or yourself!",
