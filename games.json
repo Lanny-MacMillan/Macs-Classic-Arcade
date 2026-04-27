@@ -145,5 +145,12 @@
         "description": "Test your typing speed and accuracy. Type the displayed text as fast as you can!",
         "icon": "",
         "path": "./games/typing/index.html"
+    },
+    {
+        "id": "othello",
+        "title": "Othello",
+        "description": "Classic Othello strategy game. Flip opponent pieces by surrounding them to control the board!",
+        "icon": "",
+        "path": "./games/othello/index.html"
     }
 ]

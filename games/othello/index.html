@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Othello</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="game-header">
+            <h1>Othello</h1>
+        </div>
+        
+        <div id="mode-selection" class="mode-selection">
+            <h2>Select Game Mode</h2>
+            <div class="mode-buttons">
+                <button class="mode-btn" data-mode="2player">2 Players</button>
+                <button class="mode-btn" data-mode="computer">vs Computer</button>
+            </div>
+            <div id="difficulty-selection" class="difficulty-selection hidden">
+                <h3>Select Difficulty</h3>
+                <div class="difficulty-buttons">
+                    <button class="difficulty-btn" data-difficulty="easy">Easy</button>
+                    <button class="difficulty-btn" data-difficulty="medium">Medium</button>
+                    <button class="difficulty-btn" data-difficulty="hard">Hard</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="game-area" class="game-area hidden">
+            <div class="game-info">
+                <div class="score">
+                    <span class="player-indicator black">Black: <span id="black-score">2</span></span>
+                </div>
+                <div class="turn-display" id="turn-display">Black's Turn</div>
+                <div class="score">
+                    <span class="player-indicator white">White: <span id="white-score">2</span></span>
+                </div>
+            </div>
+            <div id="game-board" class="game-board"></div>
+            <div id="game-over-screen" class="game-over-screen hidden">
+                <h2>Game Over</h2>
+                <p id="game-over-message"></p>
+                <button id="play-again-btn" class="control-btn">Play Again</button>
+            </div>
+            <div class="game-controls">
+                <button id="back-btn" class="control-btn back-btn">Back to Arcade</button>
+                <button id="reset-btn" class="control-btn reset-btn">New Game</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
