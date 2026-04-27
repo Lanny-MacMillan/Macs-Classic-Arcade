@@ -126,6 +126,13 @@
         "path": "./games/flappy/index.html"
     },
     {
+        "id": "frogger",
+        "title": "Frogger",
+        "description": "Classic lane-crossing game. Navigate through traffic and obstacles to reach the goal!",
+        "icon": "",
+        "path": "./games/frogger/index.html"
+    },
+    {
         "id": "reaction",
         "title": "Reaction Timer",
         "description": "Test your reflexes! Click as fast as you can when the screen turns green.",

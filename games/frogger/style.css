@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.game-wrapper {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.game-header {
+    margin-bottom: 20px;
+}
+
+.game-header h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.game-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 1.2em;
+}
+
+.score {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+#gameCanvas {
+    display: block;
+    background: #2d2d2d;
+    border: 3px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.start-screen,
+.game-over-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    border: 3px solid #fff;
+    z-index: 10;
+}
+
+.start-screen h2,
+.game-over-screen h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+.start-screen p,
+.game-over-screen p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.instructions {
+    color: #ffd700;
+    font-size: 1em;
+}
+
+.start-btn {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+.start-btn:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+.game-controls {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.control-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 2px solid white;
+    padding: 12px 24px;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    transition: all 0.3s;
+}
+
+.control-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.back-btn {
+    background: rgba(244, 67, 54, 0.3);
+    border-color: #f44336;
+}
+
+.back-btn:hover {
+    background: rgba(244, 67, 54, 0.5);
+}
+
+.restart-btn {
+    background: rgba(33, 150, 243, 0.3);
+    border-color: #2196F3;
+}
+
+.restart-btn:hover {
+    background: rgba(33, 150, 243, 0.5);
+}
