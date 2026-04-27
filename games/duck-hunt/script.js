@@ -92,24 +92,29 @@ class Duck {
     }
 
     ctx.fillStyle = this.hit ? "#8B4513" : "#2E8B57";
-    ctx.fillRect(-this.size / 2, -this.size / 2, this.size, this.size * 0.6);
+    ctx.fillRect(
+      -this.size / 2,
+      -this.size / 4,
+      this.size * 0.8,
+      this.size * 0.5,
+    );
 
-    ctx.fillStyle = this.hit ? "#654321" : "#228B22";
+    ctx.fillStyle = this.hit ? "#6B8E23" : "#228B22";
     ctx.beginPath();
-    ctx.arc(-this.size / 3, -this.size / 3, this.size / 4, 0, Math.PI * 2);
+    ctx.arc(this.size * 0.35, -this.size / 4, this.size / 3, 0, Math.PI * 2);
     ctx.fill();
 
     ctx.fillStyle = "#FFD700";
     ctx.beginPath();
-    ctx.moveTo(this.size / 2, 0);
-    ctx.lineTo(this.size / 2 + 15, -5);
-    ctx.lineTo(this.size / 2 + 15, 5);
+    ctx.moveTo(this.size * 0.35 + this.size / 3, -this.size / 4);
+    ctx.lineTo(this.size * 0.35 + this.size / 3 + 12, -this.size / 4 - 5);
+    ctx.lineTo(this.size * 0.35 + this.size / 3 + 12, -this.size / 4 + 5);
     ctx.closePath();
     ctx.fill();
 
     ctx.fillStyle = this.hit ? "red" : "black";
     ctx.beginPath();
-    ctx.arc(-this.size / 3 + 2, -this.size / 3 - 2, 3, 0, Math.PI * 2);
+    ctx.arc(this.size * 0.35 + 5, -this.size / 4 - 3, 3, 0, Math.PI * 2);
     ctx.fill();
 
     ctx.restore();
