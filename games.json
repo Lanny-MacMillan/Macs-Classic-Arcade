@@ -173,5 +173,12 @@
         "description": "Fast-paced endless runner. Jump over obstacles and survive as long as possible!",
         "icon": "",
         "path": "./games/runner/index.html"
+    },
+    {
+        "id": "stack",
+        "title": "Stack",
+        "description": "Timing-based stacking game. Drop blocks with perfect timing to build the highest tower!",
+        "icon": "",
+        "path": "./games/stack/index.html"
     }
 ]
