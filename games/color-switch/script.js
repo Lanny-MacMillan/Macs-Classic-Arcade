@@ -240,7 +240,7 @@ class Obstacle {
       }
 
       if (Math.abs(rotatedY) < armLength && Math.abs(rotatedX) < armWidth / 2) {
-        const segmentColor = rotatedY > 0 ? COLORS[3] : COLORS[1];
+        const segmentColor = rotatedY > 0 ? COLORS[1] : COLORS[3];
         if (segmentColor !== player.color) return true;
       }
     }
@@ -269,11 +269,16 @@ class Obstacle {
       const distToLeft = Math.abs(rotatedX + half);
       const distToRight = Math.abs(rotatedX - half);
 
-      const minDist = Math.min(distToTop, distToBottom, distToLeft, distToRight);
+      const minDist = Math.min(
+        distToTop,
+        distToBottom,
+        distToLeft,
+        distToRight,
+      );
 
       if (minDist < buffer) {
         let hitColor;
-        
+
         if (minDist === distToTop && Math.abs(rotatedX) <= half) {
           hitColor = COLORS[0];
         } else if (minDist === distToRight && Math.abs(rotatedY) <= half) {
