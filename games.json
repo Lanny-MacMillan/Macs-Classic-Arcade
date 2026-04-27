@@ -49,6 +49,13 @@
         "path": "./games/checkers/index.html"
     },
     {
+        "id": "connect-four",
+        "title": "Connect Four",
+        "description": "Classic two-player strategy game. Drop pieces and connect four in a row to win!",
+        "icon": "",
+        "path": "./games/connect-four/index.html"
+    },
+    {
         "id": "minesweeper",
         "title": "Minesweeper",
         "description": "Classic minesweeper game. Flag the mines and reveal all safe cells to win!",

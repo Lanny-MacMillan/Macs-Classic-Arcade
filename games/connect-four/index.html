@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Four</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Connect Four</h1>
+        
+        <div class="mode-selection" id="mode-selection">
+            <h2>Select Game Mode</h2>
+            <div class="mode-buttons">
+                <button class="mode-btn" data-mode="pvp">2 Players</button>
+                <button class="mode-btn" data-mode="ai">vs Computer</button>
+            </div>
+            <div id="difficulty-selection" style="display: none;">
+                <h3>Select Difficulty</h3>
+                <div class="difficulty-buttons">
+                    <button class="difficulty-btn" data-difficulty="easy">Easy</button>
+                    <button class="difficulty-btn" data-difficulty="medium">Medium</button>
+                    <button class="difficulty-btn" data-difficulty="hard">Hard</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="game-area" style="display: none;">
+            <div class="status">
+                <p id="turn-display">Player 1's Turn</p>
+            </div>
+
+            <div id="board"></div>
+
+            <div class="controls">
+                <button id="reset-btn">New Game</button>
+                <button id="back-btn" onclick="window.location.href='../../index.html'">Back to Arcade</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

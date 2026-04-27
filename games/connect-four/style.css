@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.game-container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.mode-selection {
+    margin-bottom: 20px;
+}
+
+.mode-selection h2, .mode-selection h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.mode-buttons, .difficulty-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.mode-btn, .difficulty-btn {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.mode-btn {
+    background: #667eea;
+    color: white;
+}
+
+.mode-btn:hover {
+    background: #5568d3;
+    transform: translateY(-2px);
+}
+
+.difficulty-btn {
+    background: #48bb78;
+    color: white;
+}
+
+.difficulty-btn:hover {
+    background: #38a169;
+    transform: translateY(-2px);
+}
+
+.difficulty-btn[data-difficulty=\"medium\"] {
+    background: #ed8936;
+}
+
+.difficulty-btn[data-difficulty=\"medium\"]:hover {
+    background: #dd6b20;
+}
+
+.difficulty-btn[data-difficulty=\"hard\"] {
+    background: #e53e3e;
+}
+
+.difficulty-btn[data-difficulty=\"hard\"]:hover {
+    background: #c53030;
+}
+
+.status {
+    margin-bottom: 20px;
+}
+
+#turn-display {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #555;
+}
+
+#board {
+    display: inline-block;
+    background: #0066cc;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.column {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.column:hover {
+    transform: translateY(-5px);
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    margin: 5px;
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.cell.player1 {
+    background: radial-gradient(circle at 30% 30%, #ff4757, #c92a3a);
+    box-shadow: 0 4px 8px rgba(255, 71, 87, 0.4);
+}
+
+.cell.player2 {
+    background: radial-gradient(circle at 30% 30%, #ffd700, #ffb700);
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.4);
+}
+
+.cell.winning {
+    animation: pulse 0.6s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+.controls {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#reset-btn {
+    background: #27ae60;
+    color: white;
+}
+
+#reset-btn:hover {
+    background: #229954;
+    transform: translateY(-2px);
+}
+
+#back-btn {
+    background: #3498db;
+    color: white;
+}
+
+#back-btn:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+    .cell {
+        width: 45px;
+        height: 45px;
+        margin: 3px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #turn-display {
+        font-size: 1.2em;
+    }
+}
