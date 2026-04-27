@@ -152,5 +152,12 @@
         "description": "Classic Othello strategy game. Flip opponent pieces by surrounding them to control the board!",
         "icon": "",
         "path": "./games/othello/index.html"
+    },
+    {
+        "id": "lights-out",
+        "title": "Lights Out",
+        "description": "Classic puzzle game. Click lights to toggle them and their neighbors. Turn off all lights to win!",
+        "icon": "",
+        "path": "./games/lights-out/index.html"
     }
 ]
