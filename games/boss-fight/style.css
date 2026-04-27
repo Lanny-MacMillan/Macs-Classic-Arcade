@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.game-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 15px 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.game-header h1 {
+    font-size: 2rem;
+    color: #ff3366;
+    text-shadow: 0 0 10px rgba(255, 51, 102, 0.5);
+}
+
+.level-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.level-text {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ffaa00;
+    text-shadow: 0 0 8px rgba(255, 170, 0, 0.5);
+}
+
+.upgrade-text {
+    font-size: 0.9rem;
+    color: #00d4ff;
+    text-shadow: 0 0 5px rgba(0, 212, 255, 0.5);
+}
+
+.game-info {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.health-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.health-bar span {
+    font-size: 0.9rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.health-container {
+    width: 150px;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid #00d4ff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.health-fill {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, #00ff88, #00d4ff);
+    transition: width 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+}
+
+.health-fill.boss {
+    background: linear-gradient(90deg, #ff3366, #ff6b99);
+    box-shadow: 0 0 10px rgba(255, 51, 102, 0.5);
+}
+
+.canvas-container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+}
+
+#gameCanvas {
+    border: 3px solid #00d4ff;
+    border-radius: 10px;
+    background: #0a0a0a;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+    display: block;
+    width: 800px;
+    height: 600px;
+}
+
+.start-screen, .game-over-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.95);
+    padding: 60px 80px;
+    border-radius: 15px;
+    border: 2px solid #ff3366;
+    box-shadow: 0 0 30px rgba(255, 51, 102, 0.5);
+    z-index: 1000;
+    pointer-events: all;
+    min-width: 400px;
+}
+
+.start-screen h2, .game-over-screen h2 {
+    font-size: 2.5rem;
+    color: #ff3366;
+    text-shadow: 0 0 15px rgba(255, 51, 102, 0.5);
+}
+
+.start-screen p, .game-over-screen p {
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+}
+
+.start-btn {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #ff3366 0%, #ff6b99 100%);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 51, 102, 0.4);
+    pointer-events: all;
+    z-index: 1001;
+    position: relative;
+}
+
+.start-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 51, 102, 0.6);
+}
+
+.start-btn:active {
+    transform: translateY(0);
+}
+
+.game-controls {
+    display: flex;
+    gap: 15px;
+}
+
+.control-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: rgba(0, 212, 255, 0.2);
+    border: 2px solid #00d4ff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.control-btn:hover {
+    background: rgba(0, 212, 255, 0.4);
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
+}
+
+.control-btn:active {
+    transform: scale(0.95);
+}
+
+.hidden {
+    display: none !important;
+}

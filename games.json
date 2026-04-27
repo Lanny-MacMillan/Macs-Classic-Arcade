@@ -222,5 +222,12 @@
         "description": "Math-based logic puzzle. Fill the grid so rows and columns have unique numbers while satisfying cage constraints!",
         "icon": "",
         "path": "./games/kenken/index.html"
+    },
+    {
+        "id": "boss-fight",
+        "title": "Boss Fight",
+        "description": "5-level boss battle arena. Dodge attack patterns, upgrade your weapons, and defeat all guardians!",
+        "icon": "",
+        "path": "./games/boss-fight/index.html"
     }
 ]
