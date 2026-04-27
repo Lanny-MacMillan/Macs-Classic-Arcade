@@ -19,15 +19,13 @@ body {
 
 .arcade-header {
     text-align: center;
-    margin-bottom: 40px;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .arcade-logo {
     max-width: 600px;
     width: 90%;
     height: auto;
-    margin-bottom: 10px;
     filter: drop-shadow(0 0 20px rgba(255, 0, 255, 0.5));
     animation: flicker 3s infinite alternate;
 }
@@ -43,6 +41,79 @@ body {
     text-shadow: 0 0 10px #00ffff;
 }
 
+.view-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.view-btn {
+    background: linear-gradient(145deg, #1a1a2e, #16213e);
+    border: 2px solid #00ffff;
+    border-radius: 8px;
+    padding: 10px 16px;
+    cursor: pointer;
+    color: #00ffff !important;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+    min-width: 48px;
+    min-height: 48px;
+}
+
+.view-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 255, 255, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.view-btn:hover::before {
+    opacity: 1;
+}
+
+.view-btn:hover {
+    border-color: #ff00ff;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.5), 0 0 30px rgba(0, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.view-btn.active {
+    background: linear-gradient(145deg, #2a2a3e, #26314e);
+    border-color: #ff00ff;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.7), inset 0 0 10px rgba(255, 0, 255, 0.2);
+    color: #ff00ff !important;
+}
+
+.view-btn svg {
+    width: 24px;
+    height: 24px;
+    stroke: #00ffff;
+    fill: none;
+    position: relative;
+    z-index: 1;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    display: block;
+}
+
+.view-btn.active svg {
+    stroke: #ff00ff;
+    filter: drop-shadow(0 0 3px #ff00ff);
+}
+
 .game-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -50,6 +121,78 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+}
+
+/* Compact View */
+.game-grid.compact-view {
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 20px;
+}
+
+.game-grid.compact-view .game-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+}
+
+.game-grid.compact-view .game-thumbnail {
+    width: 120px;
+    height: 100px;
+    flex-shrink: 0;
+    margin-bottom: 0;
+    margin-right: 20px;
+    font-size: 2.5rem;
+}
+
+.game-grid.compact-view .game-info {
+    flex: 1;
+}
+
+.game-grid.compact-view .game-title {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.game-grid.compact-view .game-description {
+    font-size: 0.85rem;
+}
+
+/* List View */
+.game-grid.list-view {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    max-width: 900px;
+}
+
+.game-grid.list-view .game-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 20px;
+}
+
+.game-grid.list-view .game-thumbnail {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    margin-bottom: 0;
+    margin-right: 20px;
+    font-size: 2rem;
+}
+
+.game-grid.list-view .game-info {
+    flex: 1;
+}
+
+.game-grid.list-view .game-title {
+    font-size: 1.2rem;
+    margin-bottom: 3px;
+}
+
+.game-grid.list-view .game-description {
+    font-size: 0.8rem;
+    color: #888;
 }
 
 .game-card {
@@ -147,5 +290,28 @@ body {
     .game-grid {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+    
+    .game-grid.compact-view {
+        grid-template-columns: 1fr;
+    }
+    
+    .game-grid.compact-view .game-card {
+        flex-direction: column;
+    }
+    
+    .game-grid.compact-view .game-thumbnail {
+        width: 100%;
+        height: 150px;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .arcade-logo {
+        max-width: 400px;
+    }
+    
+    .view-controls {
+        flex-wrap: wrap;
     }
 }

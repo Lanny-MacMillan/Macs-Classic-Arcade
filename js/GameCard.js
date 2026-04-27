@@ -5,8 +5,10 @@ export class GameCard {
 
     card.innerHTML = `
             <div class="game-thumbnail">${game.icon}</div>
-            <h2 class="game-title">${game.title}</h2>
-            <p class="game-description">${game.description || ""}</p>
+            <div class="game-info">
+                <h2 class="game-title">${game.title}</h2>
+                <p class="game-description">${game.description || ""}</p>
+            </div>
         `;
 
     return card;

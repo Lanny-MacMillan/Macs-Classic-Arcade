@@ -5,6 +5,7 @@ class ArcadeApp {
   constructor() {
     this.games = [];
     this.gameLoader = new GameLoader();
+    this.currentView = "grid";
     this.init();
   }
 
@@ -12,6 +13,7 @@ class ArcadeApp {
     await this.loadGames();
     this.render();
     this.setupEventListeners();
+    this.loadSavedView();
   }
 
   async loadGames() {
@@ -39,6 +41,7 @@ class ArcadeApp {
     this.gameLoader.load(game.path);
     document.getElementById("main-screen").style.display = "none";
     document.querySelector(".arcade-header").style.display = "none";
+    document.querySelector(".view-controls").style.display = "none";
   }
 
   setupEventListeners() {
@@ -46,6 +49,7 @@ class ArcadeApp {
       this.gameLoader.unload();
       document.getElementById("main-screen").style.display = "grid";
       document.querySelector(".arcade-header").style.display = "block";
+      document.querySelector(".view-controls").style.display = "flex";
     });
 
     window.addEventListener("message", (event) => {
@@ -53,8 +57,52 @@ class ArcadeApp {
         this.gameLoader.unload();
         document.getElementById("main-screen").style.display = "grid";
         document.querySelector(".arcade-header").style.display = "block";
+        document.querySelector(".view-controls").style.display = "flex";
       }
     });
+
+    // View switcher buttons
+    document.querySelectorAll(".view-btn").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const view = e.currentTarget.getAttribute("data-view");
+        this.switchView(view);
+      });
+    });
+  }
+
+  switchView(view) {
+    this.currentView = view;
+    const mainScreen = document.getElementById("main-screen");
+
+    // Remove all view classes
+    mainScreen.classList.remove("compact-view", "list-view");
+
+    // Add the appropriate view class
+    if (view === "compact") {
+      mainScreen.classList.add("compact-view");
+    } else if (view === "list") {
+      mainScreen.classList.add("list-view");
+    }
+    // 'grid' is the default, no extra class needed
+
+    // Update active button
+    document.querySelectorAll(".view-btn").forEach((btn) => {
+      btn.classList.remove("active");
+    });
+    const activeBtn = document.querySelector(`[data-view="${view}"]`);
+    if (activeBtn) {
+      activeBtn.classList.add("active");
+    }
+
+    // Save preference
+    localStorage.setItem("arcadeView", view);
+  }
+
+  loadSavedView() {
+    const savedView = localStorage.getItem("arcadeView") || "grid";
+    this.switchView(savedView);
   }
 }
 
