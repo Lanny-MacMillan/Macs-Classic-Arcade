@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Switch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="game-header">
+            <h1>Color Switch</h1>
+            <div class="score">Score: <span id="score">0</span></div>
+        </div>
+        <div id="start-screen" class="start-screen">
+            <h2>Color Switch</h2>
+            <p><strong>Click or Press SPACE to Jump</strong></p>
+            <p>Pass through matching colors only!</p>
+            <p style="font-size: 0.9em; color: #999; margin-top: 10px;">Tip: Time your jumps carefully to pass through your color segment</p>
+            <button id="start-btn" class="start-btn">Start Game</button>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div id="game-over-screen" class="game-over-screen hidden">
+            <h2>Game Over!</h2>
+            <p>Final Score: <span id="final-score">0</span></p>
+            <button id="restart-btn" class="restart-btn">Play Again</button>
+        </div>
+        <div class="game-controls">
+            <button id="back-btn" class="control-btn back-btn">Back to Arcade</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

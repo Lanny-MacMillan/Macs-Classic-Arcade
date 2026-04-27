@@ -236,5 +236,12 @@
         "description": "5-level platformer with gravity physics. Collect coins, avoid hazards, and reach the switch to advance!",
         "icon": "",
         "path": "./games/platformer/index.html"
+    },
+    {
+        "id": "color-switch",
+        "title": "Color Switch",
+        "description": "Navigate through rotating obstacles by matching your color. Pass through the right segments and collect color switchers!",
+        "icon": "",
+        "path": "./games/color-switch/index.html"
     }
 ]
