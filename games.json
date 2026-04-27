@@ -166,5 +166,12 @@
         "description": "Classic code-breaking puzzle. Guess the hidden color sequence using logic and deduction!",
         "icon": "",
         "path": "./games/mastermind/index.html"
+    },
+    {
+        "id": "runner",
+        "title": "Endless Runner",
+        "description": "Fast-paced endless runner. Jump over obstacles and survive as long as possible!",
+        "icon": "",
+        "path": "./games/runner/index.html"
     }
 ]

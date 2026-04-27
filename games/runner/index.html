@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endless Runner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>Endless Runner</h1>
+            <button id="backBtn" class="back-btn">Back to Arcade</button>
+        </div>
+        
+        <div class="game-screen">
+            <canvas id="gameCanvas" width="800" height="400"></canvas>
+            <div id="gameOver" class="game-over hidden">
+                <h2>Game Over</h2>
+                <p>Score: <span id="finalScore">0</span></p>
+                <button id="restartBtn">Play Again</button>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <p>Press SPACE or click to jump</p>
+            <p>Score: <span id="score">0</span></p>
+            <p>Speed: <span id="speed">1.0</span>x</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
