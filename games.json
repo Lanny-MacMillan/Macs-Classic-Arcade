@@ -201,5 +201,12 @@
         "description": "Timing-based stacking game. Drop blocks with perfect timing to build the highest tower!",
         "icon": "",
         "path": "./games/stack/index.html"
+    },
+    {
+        "id": "tower-defense",
+        "title": "Tower Defense",
+        "description": "Strategic defense with 5 levels, each with 20 waves. Gold carries over but towers reset. Can you defend all 100 waves?",
+        "icon": "",
+        "path": "./games/tower-defense/index.html"
     }
 ]

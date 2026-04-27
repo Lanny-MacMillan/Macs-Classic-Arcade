@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower Defense</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="game-header">
+            <h1>Tower Defense</h1>
+            <div class="stats">
+                <div class="wave">Level-Wave: <span id="wave">1-1</span></div>
+                <div class="score">Score: <span id="score">0</span></div>
+                <div class="gold">Gold: <span id="gold">200</span></div>
+                <div class="lives">Lives: <span id="lives">20</span></div>
+            </div>
+        </div>
+        <div id="start-screen" class="start-screen">
+            <h2>Defend Your Base</h2>
+            <p>Place towers to stop enemies from reaching the end</p>
+            <p>Press 1-4 to select tower type, click to place</p>
+            <p>Click towers to select, U to upgrade, S to sell</p>
+            <p>5 levels, 20 waves each. Towers reset, 70% gold carries over!</p>
+            <button id="start-btn" class="start-btn">Start Defense</button>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div id="wave-notification" class="wave-notification hidden">
+            <h2 id="wave-notification-text">Wave 1</h2>
+        </div>
+        <div id="game-over-screen" class="game-over-screen hidden">
+            <h2>Base Destroyed!</h2>
+            <p>Final Score: <span id="final-score">0</span></p>
+            <p>Waves Survived: <span id="waves-completed">0</span></p>
+            <button id="restart-btn" class="restart-btn">Try Again</button>
+        </div>
+        <div id="victory-screen" class="game-over-screen hidden">
+            <h2>Ultimate Victory!</h2>
+            <p>You conquered all 5 levels!</p>
+            <p>Final Score: <span id="victory-score">0</span></p>
+            <p>100 waves defended!</p>
+            <button id="victory-restart-btn" class="restart-btn">Play Again</button>
+        </div>
+        <div class="game-controls">
+            <div class="tower-info">
+                <p>Towers: Basic (50) | Sniper (100) | Rapid (75) | Splash (120)</p>
+            </div>
+            <button id="back-btn" class="control-btn back-btn">Back to Arcade</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
