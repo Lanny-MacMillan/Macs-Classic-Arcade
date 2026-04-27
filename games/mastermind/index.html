@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastermind</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="game-header">
+            <h1>Mastermind</h1>
+            <p class="subtitle">Break the code</p>
+        </div>
+        
+        <div id="start-screen" class="start-screen">
+            <div class="instructions">
+                <h2>How to Play</h2>
+                <p>Guess the hidden 4-color sequence</p>
+                <div class="feedback-guide">
+                    <div class="guide-item">
+                        <div class="feedback-peg black"></div>
+                        <span>Correct color, correct position</span>
+                    </div>
+                    <div class="guide-item">
+                        <div class="feedback-peg white"></div>
+                        <span>Correct color, wrong position</span>
+                    </div>
+                </div>
+                <p class="tip">You have 10 attempts to crack the code</p>
+            </div>
+            <button id="start-btn" class="start-btn">Start Game</button>
+        </div>
+
+        <div id="game-screen" class="game-screen hidden">
+            <div class="game-info">
+                <div class="attempts-left">Attempts: <span id="attempts-count">10</span></div>
+            </div>
+
+            <div class="color-palette">
+                <div class="color-btn" data-color="red"></div>
+                <div class="color-btn" data-color="blue"></div>
+                <div class="color-btn" data-color="green"></div>
+                <div class="color-btn" data-color="yellow"></div>
+                <div class="color-btn" data-color="purple"></div>
+                <div class="color-btn" data-color="orange"></div>
+            </div>
+
+            <div class="current-guess">
+                <div class="guess-slot" data-slot="0"></div>
+                <div class="guess-slot" data-slot="1"></div>
+                <div class="guess-slot" data-slot="2"></div>
+                <div class="guess-slot" data-slot="3"></div>
+                <button id="submit-btn" class="submit-btn" disabled>Submit</button>
+                <button id="clear-btn" class="clear-btn">Clear</button>
+            </div>
+
+            <div id="guess-history" class="guess-history"></div>
+        </div>
+
+        <div id="game-over-screen" class="game-over-screen hidden">
+            <h2 id="game-over-title"></h2>
+            <p id="game-over-message"></p>
+            <div id="secret-reveal" class="secret-reveal">
+                <p>The code was:</p>
+                <div id="secret-display" class="secret-display"></div>
+            </div>
+            <button id="play-again-btn" class="start-btn">Play Again</button>
+        </div>
+
+        <div class="game-controls">
+            <button id="back-btn" class="control-btn back-btn">Back to Arcade</button>
+            <button id="restart-btn" class="control-btn restart-btn">Restart</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

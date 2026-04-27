@@ -159,5 +159,12 @@
         "description": "Classic puzzle game. Click lights to toggle them and their neighbors. Turn off all lights to win!",
         "icon": "",
         "path": "./games/lights-out/index.html"
+    },
+    {
+        "id": "mastermind",
+        "title": "Mastermind",
+        "description": "Classic code-breaking puzzle. Guess the hidden color sequence using logic and deduction!",
+        "icon": "",
+        "path": "./games/mastermind/index.html"
     }
 ]
