@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeon Random Weapons</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="ui">
+            <div id="stats">
+                <div id="health">HP: <span id="hp-value">100</span></div>
+                <div id="weapon-info">Weapon: <span id="weapon-name">Basic Pistol</span></div>
+                <div id="keys">Keys: <span id="key-count">0</span></div>
+            </div>
+            <div id="game-over" class="hidden">
+                <h2>Game Over</h2>
+                <p>Final Room: <span id="final-room">1</span></p>
+                <button id="restart-btn">Restart</button>
+            </div>
+        </div>
+        <canvas id="game-canvas"></canvas>
+        <button id="back-btn">Back to Arcade</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

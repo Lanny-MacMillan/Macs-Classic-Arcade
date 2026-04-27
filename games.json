@@ -252,10 +252,10 @@
         "path": "./games/vampire-survivor/index.html"
     },
     {
-        "id": "dungeon-crawler",
-        "title": "Dungeon Crawler",
-        "description": "Explore procedurally generated dungeon rooms. Fight enemies, collect keys, and progress deeper into the dungeon!",
+        "id": "dungeon-random-weapons",
+        "title": "Dungeon Random Weapons",
+        "description": "Top-down dungeon crawler with randomized weapon mechanics. Fight enemies and collect unique weapons with varied behaviors!",
         "icon": "",
-        "path": "./games/dungeon-crawler/index.html"
+        "path": "./games/dungeon-random-weapons/index.html"
     }
 ]
