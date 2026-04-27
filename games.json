@@ -21,6 +21,13 @@
         "path": "./games/asteroids/index.html"
     },
     {
+        "id": "missile-command",
+        "title": "Missile Command",
+        "description": "Classic arcade defense game. Click to launch missiles and protect your cities from incoming attacks!",
+        "icon": "",
+        "path": "./games/missile-command/index.html"
+    },
+    {
         "id": "avoider",
         "title": "Avoider",
         "description": "Fast-paced dodging game. Control your player and avoid falling obstacles for as long as you can!",
