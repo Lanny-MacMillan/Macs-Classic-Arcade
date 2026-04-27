@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duck Hunt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="game-header">
+            <h1>Duck Hunt</h1>
+            <div class="stats">
+                <div class="round">Round: <span id="round">1</span></div>
+                <div class="score">Score: <span id="score">0</span></div>
+                <div class="ammo">Ammo: <span id="ammo">10</span></div>
+            </div>
+        </div>
+        <div id="start-screen" class="start-screen">
+            <h2>Ready to Hunt?</h2>
+            <p>Click the ducks before they fly away!</p>
+            <p>Hit all 10 ducks to advance to the next round</p>
+            <p>10 rounds total - can you beat them all?</p>
+            <button id="start-btn" class="start-btn">Start Hunting</button>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div id="round-notification" class="round-notification hidden">
+            <h2 id="round-notification-text">Round 1</h2>
+        </div>
+        <div id="game-over-screen" class="game-over-screen hidden">
+            <h2>Hunt Complete!</h2>
+            <p>Final Score: <span id="final-score">0</span></p>
+            <p>Round Reached: <span id="final-round">1</span></p>
+            <p>Ducks Hit: <span id="ducks-hit">0</span>/10</p>
+            <button id="restart-btn" class="restart-btn">Hunt Again</button>
+        </div>
+        <div id="victory-screen" class="game-over-screen hidden">
+            <h2>Perfect Hunter!</h2>
+            <p>You conquered all 10 rounds!</p>
+            <p>Final Score: <span id="victory-score">0</span></p>
+            <p>100/100 ducks eliminated!</p>
+            <p style="margin-top: 20px; font-size: 0.7rem;">Maybe take a break and go outside?</p>
+            <button id="victory-restart-btn" class="restart-btn">Hunt Again</button>
+        </div>
+        <div class="game-controls">
+            <button id="back-btn" class="control-btn back-btn">Back to Arcade</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

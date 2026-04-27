@@ -35,6 +35,13 @@
         "path": "./games/aim-trainer/index.html"
     },
     {
+        "id": "duck-hunt",
+        "title": "Duck Hunt",
+        "description": "Classic shooting gallery game. Click flying ducks before they escape with limited ammo!",
+        "icon": "",
+        "path": "./games/duck-hunt/index.html"
+    },
+    {
         "id": "snake",
         "title": "Classic Snake",
         "description": "Classic snake game. Eat food, grow longer, don't hit walls or yourself!",
