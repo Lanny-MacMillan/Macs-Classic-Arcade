@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div class="game-header">
+            <h1>Typing Speed Test</h1>
+            <button id="back-btn" class="back-button">Back to Arcade</button>
+        </div>
+
+        <div class="stats-container">
+            <div class="stat-box">
+                <div class="stat-label">WPM</div>
+                <div id="wpm" class="stat-value">0</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Accuracy</div>
+                <div id="accuracy" class="stat-value">100%</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Time</div>
+                <div id="timer" class="stat-value">0s</div>
+            </div>
+        </div>
+
+        <div class="text-display-container">
+            <div id="text-display" class="text-display"></div>
+        </div>
+
+        <div class="input-container">
+            <input 
+                type="text" 
+                id="typing-input" 
+                class="typing-input" 
+                placeholder="Start typing here..."
+                autocomplete="off"
+                autocorrect="off"
+                spellcheck="false"
+            >
+        </div>
+
+        <div class="controls">
+            <button id="reset-btn" class="reset-button">Reset</button>
+        </div>
+
+        <div id="results" class="results hidden">
+            <h2>Test Complete!</h2>
+            <div class="result-stats">
+                <p>Speed: <span id="final-wpm"></span> WPM</p>
+                <p>Accuracy: <span id="final-accuracy"></span>%</p>
+                <p>Time: <span id="final-time"></span>s</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

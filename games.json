@@ -110,5 +110,12 @@
         "description": "Test your reflexes! Click as fast as you can when the screen turns green.",
         "icon": "",
         "path": "./games/reaction/index.html"
+    },
+    {
+        "id": "typing",
+        "title": "Typing Speed Test",
+        "description": "Test your typing speed and accuracy. Type the displayed text as fast as you can!",
+        "icon": "",
+        "path": "./games/typing/index.html"
     }
 ]
