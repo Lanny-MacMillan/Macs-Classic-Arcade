@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aim Trainer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="game-header">
+            <h1>Aim Trainer</h1>
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-label">Score:</span>
+                    <span id="score">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Accuracy:</span>
+                    <span id="accuracy">100%</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Avg Time:</span>
+                    <span id="avg-time">0ms</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Time:</span>
+                    <span id="timer">30</span>s
+                </div>
+            </div>
+        </div>
+
+        <div id="start-screen" class="start-screen">
+            <h2>Ready to Test Your Aim?</h2>
+            <p>Click the targets as fast as you can!</p>
+            <p>Game Duration: 30 seconds</p>
+            <button id="start-btn" class="btn">Start Game</button>
+        </div>
+
+        <div id="game-area" class="game-area hidden"></div>
+
+        <div id="game-over-screen" class="game-over-screen hidden">
+            <h2>Game Over!</h2>
+            <div class="final-stats">
+                <p>Final Score: <span id="final-score">0</span></p>
+                <p>Accuracy: <span id="final-accuracy">100%</span></p>
+                <p>Average Reaction Time: <span id="final-avg-time">0ms</span></p>
+                <p>Targets Hit: <span id="targets-hit">0</span></p>
+            </div>
+            <button id="play-again-btn" class="btn">Play Again</button>
+        </div>
+
+        <div class="game-controls">
+            <button id="back-btn" class="control-btn back-btn">Back to Arcade</button>
+            <button id="reset-btn" class="control-btn reset-btn">Reset Game</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

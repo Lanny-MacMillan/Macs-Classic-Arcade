@@ -28,6 +28,13 @@
         "path": "./games/avoider/index.html"
     },
     {
+        "id": "aim-trainer",
+        "title": "Aim Trainer",
+        "description": "Test your reflexes and accuracy! Click targets as fast as possible within 30 seconds.",
+        "icon": "",
+        "path": "./games/aim-trainer/index.html"
+    },
+    {
         "id": "snake",
         "title": "Classic Snake",
         "description": "Classic snake game. Eat food, grow longer, don't hit walls or yourself!",
