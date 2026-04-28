@@ -393,7 +393,7 @@
   playAgainBtn.addEventListener("click", resetGame);
   resetBtn.addEventListener("click", resetGame);
   backBtn.addEventListener("click", () => {
-    window.location.href = "../../index.html";
+    window.parent.postMessage({ action: "backToArcade" }, "*");
   });
 
   window.initOthello = function (container) {

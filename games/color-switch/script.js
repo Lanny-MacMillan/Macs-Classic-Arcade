@@ -479,7 +479,7 @@ function handleJump() {
 startBtn.addEventListener("click", startGame);
 restartBtn.addEventListener("click", startGame);
 backBtn.addEventListener("click", () => {
-  window.location.href = "../../index.html";
+  window.parent.postMessage({ action: "backToArcade" }, "*");
 });
 
 canvas.addEventListener("click", handleJump);

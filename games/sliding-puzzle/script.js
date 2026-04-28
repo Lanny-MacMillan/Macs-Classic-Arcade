@@ -152,7 +152,7 @@ function initSlidingPuzzle(container) {
   resetBtn.addEventListener("click", resetGame);
 
   backBtn.addEventListener("click", () => {
-    window.location.href = "../../index.html";
+    window.parent.postMessage({ action: "backToArcade" }, "*");
   });
 
   resetGame();

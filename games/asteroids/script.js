@@ -386,11 +386,7 @@
   restartBtn.addEventListener("click", resetGame);
 
   backBtn.addEventListener("click", () => {
-    if (window.parent !== window) {
-      window.parent.postMessage({ type: "returnToArcade" }, "*");
-    } else {
-      window.location.href = "../../index.html";
-    }
+    window.parent.postMessage({ action: "backToArcade" }, "*");
   });
 
   window.initAsteroids = function (container) {

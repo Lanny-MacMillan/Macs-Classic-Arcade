@@ -67,7 +67,7 @@ body {
     border-radius: 10px;
     background: #0a0a0a;
     box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
-    cursor: none;
+    cursor: crosshair;
 }
 
 .start-screen, .game-over-screen {

@@ -40,7 +40,7 @@ function init() {
   });
 
   backBtn.addEventListener("click", () => {
-    window.location.href = "../../index.html";
+    window.parent.postMessage({ action: "backToArcade" }, "*");
   });
 
   gameArea.addEventListener("click", handleGameAreaClick);

@@ -30,7 +30,7 @@ function initGame(container) {
 
     if (backBtn) {
       backBtn.addEventListener("click", () => {
-        window.location.href = "../../index.html";
+        window.parent.postMessage({ action: "backToArcade" }, "*");
       });
     }
 
@@ -40,7 +40,7 @@ function initGame(container) {
 
     document.getElementById("reset-btn").addEventListener("click", resetGame);
     document.getElementById("back-btn").addEventListener("click", () => {
-      window.location.href = "../../index.html";
+      window.parent.postMessage({ action: "backToArcade" }, "*");
     });
 
     setupDifficultyButtons();

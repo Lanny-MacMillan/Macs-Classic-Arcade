@@ -428,7 +428,7 @@
         nextWaveTimeout = null;
       }
     }
-    window.location.href = "../../index.html";
+    window.parent.postMessage({ action: "backToArcade" }, "*");
   });
 
   window.initMissileCommand = function (container) {

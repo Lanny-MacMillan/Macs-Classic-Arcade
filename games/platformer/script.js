@@ -423,7 +423,7 @@
   startBtn.addEventListener("click", startGame);
   playAgainBtn.addEventListener("click", startGame);
   backBtn.addEventListener("click", () => {
-    window.location.href = "../../index.html";
+    window.parent.postMessage({ action: "backToArcade" }, "*");
   });
 
   init();

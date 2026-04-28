@@ -436,7 +436,7 @@ function initSolitaire(container) {
   document.getElementById("stock").addEventListener("click", handleStockClick);
   document.getElementById("reset-btn").addEventListener("click", resetGame);
   document.getElementById("back-btn").addEventListener("click", () => {
-    window.location.href = "../../index.html";
+    window.parent.postMessage({ action: "backToArcade" }, "*");
   });
 
   document

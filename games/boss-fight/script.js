@@ -506,7 +506,7 @@
       gameRunning = false;
       cancelAnimationFrame(animationId);
     }
-    window.location.href = "../../index.html";
+    window.parent.postMessage({ action: "backToArcade" }, "*");
   });
 
   document.addEventListener("keydown", (e) => {

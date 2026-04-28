@@ -166,7 +166,7 @@ typingInput.addEventListener("input", () => {
 resetBtn.addEventListener("click", initGame);
 
 backBtn.addEventListener("click", () => {
-  window.location.href = "../../index.html";
+  window.parent.postMessage({ action: "backToArcade" }, "*");
 });
 
 if (typeof module !== "undefined" && module.exports) {

@@ -35,7 +35,7 @@
 
             <div class="controls">
                 <button id="reset-btn">New Game</button>
-                <button id="back-btn" onclick="window.location.href='../../index.html'">Back to Arcade</button>
+                <button id="back-btn" onclick="window.parent.postMessage({ action: 'backToArcade' }, '*')">Back to Arcade</button>
             </div>
         </div>
     </div>

@@ -747,7 +747,7 @@ document.addEventListener("keyup", (e) => {
 });
 
 document.getElementById("back-btn").addEventListener("click", () => {
-  window.location.href = "../../index.html";
+  window.parent.postMessage({ action: "backToArcade" }, "*");
 });
 
 document.getElementById("restart-btn").addEventListener("click", restartGame);

@@ -184,7 +184,7 @@ canvas.addEventListener("click", jump);
 restartBtn.addEventListener("click", initGame);
 
 backBtn.addEventListener("click", () => {
-  window.location.href = "../../index.html";
+  window.parent.postMessage({ action: "backToArcade" }, "*");
 });
 
 initGame();
