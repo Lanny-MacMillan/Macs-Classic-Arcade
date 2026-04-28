@@ -1,129 +1,96 @@
-# Mac's Classic Arcade
+<div align="center">
+  <img src="./shared/images/MacsClassicArcade.png" alt="Mac's Classic Arcade" width="600">
+</div>
 
-A modular, browser-based arcade game hub built with vanilla JavaScript and iframe isolation.
+# 🕹️ Mac's Classic Arcade
 
-## Architecture
+Welcome to Mac's Classic Arcade - a retro-inspired browser arcade featuring classic games reimagined for the web. Jump in and play everything from Snake and Pong to Asteroids, Chess, and Minesweeper, all in one place!
 
-### Tech Stack
+**🎮 [Play Now - Live Arcade](https://main.d26gle35aeik8d.amplifyapp.com/)**
 
-- **Frontend**: Vanilla JavaScript (ES6 modules)
-- **Styling**: Pure CSS with retro arcade theme
-- **Game Isolation**: iframe-based architecture
+## 🎯 About
 
-### Why Vanilla JS + iframes?
+Mac's Classic Arcade is a growing collection of browser-based games built with a focus on simplicity and nostalgia. Each game runs in complete isolation, offering a pure gaming experience without ads, trackers, or complexity. Just pick a game and play!
 
-- **Zero dependencies**: No build process, runs directly in browser
-- **True isolation**: Each game runs in separate iframe with own JS/CSS scope
-- **Technology agnostic**: Games can use any framework or vanilla code
-- **No conflicts**: Games cannot interfere with each other or main app
-- **Easy deployment**: Just serve static files
+Currently featuring 40+ games including:
 
-## Project Structure
+- **Action**: Snake, Flappy Bird, Asteroids, Duck Hunt, Frogger
+- **Puzzle**: 2048, Minesweeper, Sudoku, Nonogram, Lights Out
+- **Strategy**: Chess, Checkers, Connect Four, Othello
+- **Arcade Classics**: Pong, Breakout, Space Invaders, Pac-Man style games
+- **And many more!**
 
-```
-/
-├── index.html              # Main arcade screen
-├── app.js                  # App initialization and orchestration
-├── style.css               # Global arcade styling
-├── games.json              # Game metadata registry
-├── /js
-│   ├── GameCard.js         # Reusable game card component
-│   └── GameLoader.js       # iframe management for game loading
-└── /games
-    └── /snake              # Self-contained game
-        ├── index.html
-        ├── game.js
-        └── style.css
-```
+## 🛠️ Tech Stack
 
-## How to Run
+Built with pure vanilla JavaScript and modern web standards:
 
-### Local Development
+- **Vanilla JavaScript (ES6)** - No frameworks, just clean code
+- **iframe Architecture** - Each game runs in complete isolation
+- **Pure CSS** - Retro arcade aesthetic with smooth animations
+- **Hosted on AWS Amplify** - Fast, reliable, global delivery
 
-1. Start a local server in the project root:
+The minimalist approach means fast load times, zero dependencies, and games that will run on any modern browser.
 
-   ```bash
-   # Python 3
-   python3 -m http.server 8000
+## 🚀 Coming Soon
 
-   # Node.js
-   npx serve
+The arcade is constantly evolving! Here's what's on the roadmap:
 
-   # PHP
-   php -S localhost:8000
-   ```
+### 🎵 Audio Experience
 
-2. Open browser to `http://localhost:8000`
+- Sound effects for game actions
+- Background music themes
+- Volume controls and audio preferences
 
-### Why a server is required
+### 🏆 Progression System
 
-ES6 modules require HTTP protocol due to CORS restrictions. File protocol (file://) will not work.
+- **Achievements System** - Unlock badges across all games
+- **Global Currency** - Earn coins from gameplay to unlock premium features
+- **Game Unlocks** - Start with core games, unlock more as you play
+- **Skins & Customization** - Personalize your arcade experience
 
-## Adding New Games
+### 📊 Competition Features
 
-### Step 1: Create game folder
+- **Per-Game Leaderboards** - Compete for high scores in each game
+- **Daily Challenges** - Random game modifiers for bonus rewards
+- **Player Stats** - Track your performance across all games
 
-```
-/games/your-game/
-  ├── index.html
-  ├── game.js
-  └── style.css
-```
+### 🎲 Enhanced Discovery
 
-### Step 2: Build your game
+- **Random Game Button** - Feeling lucky? Let the arcade choose!
+- **Game Categories & Filtering** - Find games by mood or genre
+- **Recently Played** - Quick access to your favorite games
 
-Each game is completely isolated. Use any approach:
+### 🔐 User Accounts
 
-- Canvas rendering
-- DOM manipulation
-- WebGL
-- Even different frameworks
+- Save your progress across devices
+- Personal achievement showcase
+- Friend leaderboards and challenges
 
-### Step 3: Register in games.json
+## 🎨 Design Philosophy
 
-```json
-{
-  "id": "your-game",
-  "title": "Your Game",
-  "description": "Game description",
-  "icon": "🎮",
-  "path": "./games/your-game/index.html"
-}
-```
+**Modular & Scalable** - Each game is self-contained and independent. New games can be added without touching existing code.
 
-### Game Independence
+**Performance First** - No heavy frameworks, no bloat. Games load instantly and run smoothly.
 
-- Games run in separate iframes
-- No shared state between games
-- CSS/JS cannot leak or conflict
-- Games can be developed/tested independently
+**True Isolation** - iframe-based architecture means games can't conflict with each other, making the arcade stable and reliable.
 
-## Design Philosophy
+**Browser Native** - Leveraging modern web APIs and ES6 modules for a native-feeling experience.
 
-### Modularity
+## 📱 Browser Support
 
-Each game is a standalone web page that runs in isolation.
+Mac's Classic Arcade works on all modern browsers:
 
-### Scalability
-
-Adding games requires no changes to core code, only:
-
-1. New game folder
-2. Entry in games.json
-
-### Simplicity
-
-No build tools, no complex state management, no framework overhead.
-
-## Browser Support
-
-- Modern browsers with ES6 module support
 - Chrome, Firefox, Safari, Edge (latest versions)
+- Desktop and mobile devices
+- Requires JavaScript enabled
 
-## Future Enhancements
+## 🤝 Contributing
 
-- Game state persistence (localStorage)
-- High score system
-- Game categories/filtering
-- Keyboard shortcuts for navigation
-- Fullscreen mode per game
+Interested in adding a game or feature? Contributions are welcome! Each game is a standalone HTML/CSS/JS project in the `/games` directory.
+
+- **Add a Game**: [Submit a Pull Request](../../pulls) with your game in a new `/games/your-game/` folder
+- **Report Bugs**: [Open an Issue](../../issues) if you find any bugs or have suggestions
+
+## 📄 License
+
+Open source and free to play.
