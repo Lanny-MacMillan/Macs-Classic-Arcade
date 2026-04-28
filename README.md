@@ -86,7 +86,7 @@ Each game is completely isolated. Use any approach:
   "id": "your-game",
   "title": "Your Game",
   "description": "Game description",
-  "icon": "🎮",
+  "icon": "",
   "path": "./games/your-game/index.html"
 }
 ```
