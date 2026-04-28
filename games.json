@@ -3,259 +3,259 @@
         "id": "breakout",
         "title": "Breakout",
         "description": "Classic brick breaker game. Bounce the ball off the paddle and destroy all the bricks!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/breakout.png' alt='Breakout'>",
         "path": "./games/breakout/index.html"
     },
     {
         "id": "pong",
         "title": "Pong",
         "description": "Classic arcade game with three difficulty levels. Battle the AI in fast-paced paddle action!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/pong.png' alt='Pong'>",
         "path": "./games/pong/index.html"
     },
     {
         "id": "asteroids",
         "title": "Asteroids",
         "description": "Classic space shooter. Rotate, thrust, and shoot to destroy asteroids while avoiding collisions!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/asteroids.png' alt='Asteroids'>",
         "path": "./games/asteroids/index.html"
     },
     {
         "id": "missile-command",
         "title": "Missile Command",
         "description": "Classic arcade defense game. Click to launch missiles and protect your cities from incoming attacks!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/missle_command.png' alt='Missile Command'>",
         "path": "./games/missile-command/index.html"
     },
     {
         "id": "avoider",
         "title": "Avoider",
         "description": "Fast-paced dodging game. Control your player and avoid falling obstacles for as long as you can!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/avoider.png' alt='Avoider'>",
         "path": "./games/avoider/index.html"
     },
     {
         "id": "aim-trainer",
         "title": "Aim Trainer",
         "description": "Test your reflexes and accuracy! Click targets as fast as possible within 30 seconds.",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/aim_trainer.png' alt='Aim Trainer'>",
         "path": "./games/aim-trainer/index.html"
     },
     {
         "id": "duck-hunt",
         "title": "Duck Hunt",
         "description": "Classic shooting gallery game. Click flying ducks before they escape with limited ammo!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/duck_hunt.png' alt='Duck Hunt'>",
         "path": "./games/duck-hunt/index.html"
     },
     {
         "id": "snake",
         "title": "Classic Snake",
         "description": "Classic snake game. Eat food, grow longer, don't hit walls or yourself!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/snake.png' alt='Snake'>",
         "path": "./games/snake/index.html"
     },
     {
         "id": "2048",
         "title": "2048",
         "description": "Slide numbered tiles to combine them and reach 2048. Addictive puzzle game!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/2048.png' alt='2048'>",
         "path": "./games/2048/index.html"
     },
     {
         "id": "chess",
         "title": "Chess",
         "description": "Classic chess game. Play against a friend with full move validation and checkmate detection.",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/chess.png' alt='Chess'>",
         "path": "./games/chess/index.html"
     },
     {
         "id": "checkers",
         "title": "Checkers",
         "description": "Classic checkers game. Jump your opponent's pieces and crown your kings to victory!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/checkers.png' alt='Checkers'>",
         "path": "./games/checkers/index.html"
     },
     {
         "id": "connect-four",
         "title": "Connect Four",
         "description": "Classic two-player strategy game. Drop pieces and connect four in a row to win!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/connect_four.png' alt='Connect Four'>",
         "path": "./games/connect-four/index.html"
     },
     {
         "id": "minesweeper",
         "title": "Minesweeper",
         "description": "Classic minesweeper game. Flag the mines and reveal all safe cells to win!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/minesweeper.png' alt='Minesweeper'>",
         "path": "./games/minesweeper/index.html"
     },
     {
         "id": "solitaire",
         "title": "Solitaire",
         "description": "Classic solitaire card game. Build foundations from Ace to King in each suit!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/solitaire.png' alt='Solitaire'>",
         "path": "./games/solitare/index.html"
     },
     {
         "id": "invaders",
         "title": "Invaders",
         "description": "Classic space invaders arcade game. Destroy alien waves before they reach Earth!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/invaders.png' alt='Invaders'>",
         "path": "./games/invaders/index.html"
     },
     {
         "id": "tic-tac-toe",
         "title": "Tic-Tac-Toe",
         "description": "Classic tic-tac-toe game. Get three in a row before your opponent does!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/tic_tac_toe.png' alt='Tic-Tac-Toe'>",
         "path": "./games/tic-tac-toe/index.html"
     },
     {
         "id": "memory",
         "title": "Memory Match",
         "description": "Classic memory card game. Flip cards to find matching pairs and test your memory!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/memory_match.png' alt='Memory Match'>",
         "path": "./games/memory/index.html"
     },
     {
         "id": "rock-paper-scissors",
         "title": "Rock Paper Scissors",
         "description": "Classic hand game. Choose rock, paper, or scissors and beat the computer!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/rock_paper_scissor.png' alt='Rock Paper Scissors'>",
         "path": "./games/rock-paper-scissors/index.html"
     },
     {
         "id": "sliding-puzzle",
         "title": "Sliding Puzzle",
         "description": "Classic 15-puzzle game. Slide tiles to arrange numbers 1-15 in order!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/sliding_puzzle.png' alt='Sliding Puzzle'>",
         "path": "./games/sliding-puzzle/index.html"
     },
     {
         "id": "sudoku",
         "title": "Sudoku",
         "description": "Classic number puzzle. Fill the 9x9 grid so each row, column, and 3x3 box contains 1-9!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/sudoku.png' alt='Sudoku'>",
         "path": "./games/sudoku/index.html"
     },
     {
         "id": "nonogram",
         "title": "Nonogram",
         "description": "Logic puzzle game. Reveal hidden pictures by filling cells based on number clues for rows and columns!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/nonogram.png' alt='Nonogram'>",
         "path": "./games/nonogram/index.html"
     },
     {
         "id": "flappy",
         "title": "Flappy Bird",
         "description": "Side-scrolling game. Tap or press space to flap through the pipes without crashing!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/flappy_bird.png' alt='Flappy Bird'>",
         "path": "./games/flappy/index.html"
     },
     {
         "id": "frogger",
         "title": "Frogger",
         "description": "Classic lane-crossing game. Navigate through traffic and obstacles to reach the goal!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/frogger.png' alt='Frogger'>",
         "path": "./games/frogger/index.html"
     },
     {
         "id": "reaction",
         "title": "Reaction Timer",
         "description": "Test your reflexes! Click as fast as you can when the screen turns green.",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/reaction_timer.png' alt='Reaction Timer'>",
         "path": "./games/reaction/index.html"
     },
     {
         "id": "typing",
         "title": "Typing Speed Test",
         "description": "Test your typing speed and accuracy. Type the displayed text as fast as you can!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/typing_speed_test.png' alt='Typing Speed Test'>",
         "path": "./games/typing/index.html"
     },
     {
         "id": "othello",
         "title": "Othello",
         "description": "Classic Othello strategy game. Flip opponent pieces by surrounding them to control the board!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/othello.png' alt='Othello'>",
         "path": "./games/othello/index.html"
     },
     {
         "id": "lights-out",
         "title": "Lights Out",
         "description": "Classic puzzle game. Click lights to toggle them and their neighbors. Turn off all lights to win!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/lights_out.png' alt='Lights Out'>",
         "path": "./games/lights-out/index.html"
     },
     {
         "id": "mastermind",
         "title": "Mastermind",
         "description": "Classic code-breaking puzzle. Guess the hidden color sequence using logic and deduction!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/mastermind.png' alt='Mastermind'>",
         "path": "./games/mastermind/index.html"
     },
     {
         "id": "runner",
         "title": "Endless Runner",
         "description": "Fast-paced endless runner. Jump over obstacles and survive as long as possible!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/endless_runner.png' alt='Endless Runner'>",
         "path": "./games/runner/index.html"
     },
     {
         "id": "stack",
         "title": "Stack",
         "description": "Timing-based stacking game. Drop blocks with perfect timing to build the highest tower!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/stack.png' alt='Stack'>",
         "path": "./games/stack/index.html"
     },
     {
         "id": "tower-defense",
         "title": "Tower Defense",
         "description": "Strategic defense with 5 levels, each with 20 waves. Gold carries over but towers reset. Can you defend all 100 waves?",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/tower_defense.png' alt='Tower Defense'>",
         "path": "./games/tower-defense/index.html"
     },
     {
         "id": "kenken",
         "title": "KenKen",
         "description": "Math-based logic puzzle. Fill the grid so rows and columns have unique numbers while satisfying cage constraints!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/kenken.png' alt='KenKen'>",
         "path": "./games/kenken/index.html"
     },
     {
         "id": "boss-fight",
         "title": "Boss Fight",
         "description": "5-level boss battle arena. Dodge attack patterns, upgrade your weapons, and defeat all guardians!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/boss_fight.png' alt='Boss Fight'>",
         "path": "./games/boss-fight/index.html"
     },
     {
         "id": "platformer",
         "title": "Platformer",
         "description": "5-level platformer with gravity physics. Collect coins, avoid hazards, and reach the switch to advance!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/platformer.png' alt='Platformer'>",
         "path": "./games/platformer/index.html"
     },
     {
         "id": "color-switch",
         "title": "Color Switch",
         "description": "Navigate through rotating obstacles by matching your color. Pass through the right segments and collect color switchers!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/color_switch.png' alt='Color Switch'>",
         "path": "./games/color-switch/index.html"
     },
     {
         "id": "vampire-survivor",
         "title": "Vampire Survivor",
         "description": "Survive endless waves of enemies with auto-attacking weapons. Level up and choose powerful upgrades!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/vampire_survivor.png' alt='Vampire Survivor'>",
         "path": "./games/vampire-survivor/index.html"
     },
     {
         "id": "dungeon-random-weapons",
         "title": "Dungeon Random Weapons",
         "description": "Top-down dungeon crawler with randomized weapon mechanics. Fight enemies and collect unique weapons with varied behaviors!",
-        "icon": "",
+        "icon": "<img src='./shared/thumbnails/dungeon_random_weapons.png' alt='Dungeon Random Weapons'>",
         "path": "./games/dungeon-random-weapons/index.html"
     }
 ]

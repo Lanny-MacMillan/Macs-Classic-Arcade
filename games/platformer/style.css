@@ -23,6 +23,7 @@ body {
 }
 
 .game-header {
+  position: relative;
   text-align: center;
   background: rgba(0, 0, 0, 0.3);
   padding: 15px 30px;
@@ -34,6 +35,26 @@ body {
   font-size: 2.5em;
   margin-bottom: 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.back-btn-header {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.back-btn-header:hover {
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .game-info {

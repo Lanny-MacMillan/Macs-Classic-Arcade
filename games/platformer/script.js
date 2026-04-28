@@ -7,6 +7,7 @@
   const startBtn = document.getElementById("start-btn");
   const playAgainBtn = document.getElementById("play-again-btn");
   const backBtn = document.getElementById("back-btn");
+  const mainBackBtn = document.getElementById("main-back-btn");
   const coinsElement = document.getElementById("coins");
   const totalCoinsElement = document.getElementById("total-coins");
   const levelElement = document.getElementById("level");
@@ -423,6 +424,9 @@
   startBtn.addEventListener("click", startGame);
   playAgainBtn.addEventListener("click", startGame);
   backBtn.addEventListener("click", () => {
+    window.parent.postMessage({ action: "backToArcade" }, "*");
+  });
+  mainBackBtn.addEventListener("click", () => {
     window.parent.postMessage({ action: "backToArcade" }, "*");
   });
 
