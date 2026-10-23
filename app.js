@@ -45,13 +45,6 @@ class ArcadeApp {
   }
 
   setupEventListeners() {
-    document.getElementById("back-btn").addEventListener("click", () => {
-      this.gameLoader.unload();
-      document.getElementById("main-screen").style.display = "grid";
-      document.querySelector(".arcade-header").style.display = "block";
-      document.querySelector(".view-controls").style.display = "flex";
-    });
-
     window.addEventListener("message", (event) => {
       if (event.data.action === "backToArcade") {
         this.gameLoader.unload();
